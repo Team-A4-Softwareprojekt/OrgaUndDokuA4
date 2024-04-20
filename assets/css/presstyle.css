@@ -1,0 +1,90 @@
+  body {
+      font-family: Verdana, sans-serif;
+  }
+
+  a:link {
+      text-decoration: none;
+      /*color: #000;*/
+  }
+
+  textarea {
+    display: none;
+  }
+  
+  .mermaid {
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3 {
+      font-family: Helvetica, sans-serif;
+     /* font-weight: normal;*/
+      margin-bottom: 20px;
+  }
+
+  img {
+      display: block;
+      max-width: 100%;
+      /*
+      border: 2px solid rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      */
+      text-align: center;
+      float: none !important;
+      margin: auto;
+  }
+
+  table {
+      border-collapse: collapse;
+      margin: 20px auto;
+  }
+
+  td,
+  th {
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      padding: 0.5rem;
+      text-align: left;
+  }
+
+  th {
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  td {
+      font-size: 1.1rem;
+  }
+
+  tr:nth-child(2n) {
+      background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .remark-code,
+  .remark-inline-code {
+      font-family: 'Courier New', monospace;
+  }
+
+  @page {
+      size: 908px 681px;
+      margin: 0;
+  }
+
+  .large {
+      font-size: 130%
+  }
+
+  .small {
+      font-size: 70%
+  }
+
+  @media print {
+      .remark-slide-scaler {
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          transform: scale(1) !important;
+      }
+  }
+
+ 
