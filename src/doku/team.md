@@ -126,3 +126,25 @@ Verfügen Sie über die notwendigen Kompetenzen?
 - Zu wenig Tutoren
 - Nebeneffekte = Beispielaufgaben für die Präsentation, keine Füllung der App mit Inhalt
 - “So sehen die Aufgaben aus, wenn die App mit Inhalt gefüllt wird”
+
+
+## Protokoll 25.04.2024 9:00 Uhr - 12:00 Uhr
+
+### Spezifikationen
+
+1. Zusammentragen von gesammelten Informationen zu möglichen Technologien, die verwendet werden sollen
+   - Web-Application --> react.js mit veröffentlichung auf github-pages
+   - Server --> node.js & socket.io mit veröffentlichung über render.com
+   - Datenbank --> Ideen: MySQL oder render.com oder MongoDB? entscheidung ausstehend 
+   - Kommunikations ablauf: Webapp <--> Server <--> Datenbank
+   
+
+2. besprechung erster entwurf ER-Diagramm und Systemarchitektur
+
+
+3. gemeinsame bearbeitung Kapitel 3 technische Beschreibung 
+   - Softwarearchitektur (Definierung von Server- und Client-Schichten)
+   - User-Storys definieren
+   - Mögliche Fehler formulieren
+   - Grober Zeitplan für zukünftige Meilensteinen 
+   - Logo erstellung mittels KI
