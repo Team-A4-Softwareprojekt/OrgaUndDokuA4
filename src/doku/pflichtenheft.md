@@ -64,8 +64,6 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 * ggfs. Use-Case Diagramme (Kevin)
 * Strukturierung der Diagramme in funktionale Gruppen (Kevin)
 
-* 
-
 ### Definition der Akteure
 
 **User (Lernender oder Tutor)**
@@ -111,20 +109,17 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 ## 2.3 Nicht-funktionale Anforderungen
 
 **Leistungsanforderungen:**
-
-**Realitätsanforderungen:**
+* Benutzerzahl: Die Webanwendung soll für Testzwecke eine geringe Anzahl an parallelen Benutzern zulassen. Wichtig ist, dass eine einfache Skalierung zulässiger Nutzer möglich bleibt.
+* Datenumfang: Die Anwendung verfügt über genug Daten, sodass alle Spielmodi funktional lauffähig sind
+* Zeitverhalten: Die Webanwendung soll schnelle Reaktionszeit aufweisen, sodass eine flüssige Nutzung der Anwendung möglich wird
 
 **Qualitätsanforderungen:**
-
-* Zeitverhalten: Die Webanwendung soll schnelle Reaktionszeit aufweisen, sodass eine flüssige Nutzung der Anwendung
-  möglich wird
-* IT-Sicherheit: Die Webanwendung soll nicht von außen beeinflussbar sein, in der Datenbank gespeicherte Daten sind für
-  Außenstehende unzugänglich
+* IT-Sicherheit: Die Webanwendung soll nicht von außen beeinflussbar sein, in der Datenbank gespeicherte Daten sind für Außenstehende unzugänglich
 * Robustheit: Das System biete für eine längere Periode ein kontinuierliches Spielerlebnis ohne Neustarten zu müssen.
-* Benutzerzahl:
-* Datenumfang: Die Anwendung verfügt über genug Daten, sodass alle Spielmodi funktional lauffähig sind
-* Richtlinien:
-* Dokumentation:
+
+**Realitätsanforderungen:**
+* Dokumentation: Sämtlicher Code wird vollständig auf Englisch kommentiert. Ideen werden in den Meeting-Protokollen und als Kanban-Eintrag festgehalten
+* Richtlinien: Commit, Kommentierung
 
 ### 2.3.1 Rahmenbedingungen
 
@@ -163,6 +158,63 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 ## 2.4 Graphische Benutzerschnittstelle (Mockups einfügen)
 
+#### Startseite
+
+![](../Artefacts/Mockups_V1/StartScreen.png)
+
+#### Login
+
+![](../Artefacts/Mockups_V1/Login.png)
+
+#### Auswahl der Lerninhalte (Senpai-Spezifikation)
+
+![](../Artefacts/Mockups_V1/SenpaiSpezifikationAuswahl.png)
+
+#### Lernplattform Übersicht
+
+![](../Artefacts/Mockups_V1/loggedin.png)
+
+##### Daily-Challenge
+
+**Lückentext**
+![](../Artefacts/Mockups_V1/DailyChallengeLückentext.png)
+
+**Multiple Choice**
+![](../Artefacts/Mockups_V1/DailyChallengeMultipleChoice.png)
+
+##### Code Battles
+
+![](../Artefacts/Mockups_V1/battleauswahl.png)
+
+###### Buzzer
+
+**Lückentext**
+![](../Artefacts/Mockups_V1/DailyChallengeLückentext.png)
+
+**Multiple Choice**
+![](../Artefacts/Mockups_V1/DailyChallengeMultipleChoice.png)
+
+###### Manipulation
+
+**Manipulation Spieler1:**
+![](../Artefacts/Mockups_V1/ManipulationScreenP1.png)
+
+**Manipulation Spieler2:**
+![](../Artefacts/Mockups_V1/ManipulationScreenP2.png)
+
+###### Limitation
+
+![](../Artefacts/Mockups_V1/LimitationScreen.png)
+
+##### Exercise
+
+**Übersicht**
+![](../Artefacts/Mockups_V1/ExerciseUbersichtScreen.png)
+
+**Bearbeitung**
+![](../Artefacts/Mockups_V1/ExerciseScreen.png)
+
+
 * GUI-Mockups passend zu User Stories
 
 * Screens mit Überschrift kennzeichnen, die im Inhaltsverzeichnis zu sehen ist
@@ -179,14 +231,14 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 #### Benutzerstory 1: Accountverwaltung
 
-**Wer:** Als registrierter Nutzer von CodeSenpai  
+**Wer:** Als registrierter Nutzer von Senpai  
 **Was:** Möchte ich meinen Account verwalten können.  
 **Warum:** Um meine persönlichen Informationen zu aktualisieren, mein Passwort zu ändern und gegebenenfalls meinen Account zu löschen.  
 **Wann akzeptiert:** Wenn ich auf meiner Profilseite einfache Optionen zur Bearbeitung meiner Kontoinformationen finde und diese Änderungen nahtlos umgesetzt werden.
 
 #### Benutzerstory 2: Speichern von Login-Daten
 
-**Wer:** Als registrierter Nutzer von CodeSenpai  
+**Wer:** Als registrierter Nutzer von Senpai  
 **Was:** Möchte ich, dass meine Login-Daten gespeichert werden, damit ich mich nicht jedes Mal neu anmelden muss.  
 **Warum:** Um den Anmeldevorgang zu beschleunigen und die Benutzererfahrung zu verbessern.  
 **Wann akzeptiert:** Wenn ich die Option habe, meine Anmeldeinformationen zu speichern, und automatisch angemeldet werde, wenn ich die Website erneut besuche.
@@ -242,7 +294,7 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 # 3 Technische Beschreibung
 
-## 3.1 Systemübersicht (Tobi)
+## 3.1 Systemübersicht
 
 ![](../Artefacts/Systemarchitektur.PNG)
 
@@ -278,7 +330,7 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 * Client
     * Interaktion mit Web-Schicht über Frontend
 
-## 3.3 Schnittstellen (Lewin)
+## 3.3 Schnittstellen (Tobi)
 
 * Schnittstellenbeschreibung (API)
 * Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
