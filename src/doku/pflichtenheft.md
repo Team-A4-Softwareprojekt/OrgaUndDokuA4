@@ -335,9 +335,30 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 * Schnittstellenbeschreibung (API)
 * Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
 
-WebSocket-API (socket.io)
-ChatGPT API
-Visual Studio API
+**WebSocket-API (socket.io):**
+
+**ChatGPT API:**
+
+Die API von ChatGPT ermöglicht das Einbinden der KI in eigene Softwareprojekte. In diesem Projekt soll die KI eventuell 
+genutzt werden, um ggf. automatisierte Korrekturen der Exercises zu bieten.
+
+https://openai.com/product
+
+https://chatgpt-info.de/chatgpt-in-website-einbinden-schritt-fuer-schritt-anleitung/
+
+https://www.ionos.de/digitalguide/websites/web-entwicklung/chatgpt-api/
+
+**Visual Studio API:**
+
+Die Aufgaben unserer Lernplattform sollen Code-highlighting und IDE ähnliche funktionen wie z.B. Compilierung bieten.
+Auf GitHub kann der Code jedes repository Online im Browser in VSCode geöffnet werden, indem die URL von github.com zu 
+github.dev geändert wird.
+
+https://www.youtube.com/watch?v=zRkHk2WZwjc
+
+https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
+
+Eine solche Funktion wäre für unsere Lernplattform im CodeSenpai bereich eine Bereicherung.
 
 Hier sollen sämtliche Schnittstellen definiert werden:
 
