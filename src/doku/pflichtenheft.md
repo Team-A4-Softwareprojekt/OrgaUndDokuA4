@@ -316,42 +316,55 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 ## 3.2 Softwarearchitektur
 
-* Server
-    * Web-Schicht
-        * Kommunikation mit den Clients über Web-Sockets
-    * Logik-Schicht
-        * Abarbeitung der Anfragen über JS Code
-    * Persistenz-Schicht
-        * Anfrage und Ablage von zu speichernden oder gespeicherten Daten via Datenbank
+#### Drei-Schichten-Architektur:
 
-* Client
-    * View-Schicht
-        * Web-Anwendung (ggf. PWA) als grafische Interaktionsschnittstelle
-    * Logik-Schicht
-        * Verwaltung der Logik im JSX basierenden Backend
-    * Kommunikation-Schicht
-        * Kommunikation mit dem Server via Web-Sockets
+**Präsentationsschicht:**
+  - Web-Anwendung (ggf. PWA) als grafische Interaktionsschnittstelle
+  - Es wird die Open-Source JavaScript Bibliothek React.js verwendet, um die Benutzeroberfläche und
+    dessen Interaktion zu implementieren
+  - kommuniziert über Web-sockets mit der Logik-Schicht
+  - Website wird gehostet über Github-Pages
+  - kein direkter Zugriff auf die Datenbank
+
+**Logik-Schicht:**
+  - hierfür wird ebenfalls JavaScript mittels Node.js verwendet, um die Server-funktionalität zu stellen
+  - reagiert über Web-sockets auf Anfragen der Präsentationsschicht
+  - Serverfunktionalität wird gehostet auf Render.com
+  - zugriff auf Datenbank
+
+**Datenzugriffsschicht:**
+  - der Oracle SQL Developer wird verwendet, um die Datenbank aufzusetzen
+  - nur der Server kommuniziert mit der Datenbank
 
 ### 3.2.1 Technologieauswahl
 
-* Datenbank
-    * (noch nicht festgelegt) MySQL, PostgreSQL via Render, NoSql via MongoDB
-* Server
-    * Javascript-Software, CI/CD via Render, Kommunikation mit Logik-Schicht über Sockets
-* Logik-Schicht
-    * "Backend", weitergabe von Anfragen über Frontend an den Server, inkorporiert in React.js mit JSX
-* Web-Schicht
-    * "Frontend", GUI, Benutzerschnittstelle zur Interaktion mit Logikschicht, JSX Software basierend auf React.js,
-      gehosted über GithubPages
-* Client
-    * Interaktion mit Web-Schicht über Frontend
+**Client:**
+
+    * React.js (JavaScript und XML (JSX)), 
+    * Github-Pages
+    * Socket.io (Kommunikation zum Server)
+
+**Server:**
+
+    * Node.js (JavaScript), 
+    * CI/CD via Render
+    * Socket.io (Kommunikation zum Client)
+
+**Datenbank:**
+
+    * Oracle SQL Developer
+
+
 
 ## 3.3 Schnittstellen (Tobi)
 
-* Schnittstellenbeschreibung (API)
-* Auflistung der nach außen sichtbaren Schnittstelle der Softwarebausteine
-
 **WebSocket-API (socket.io):**
+
+Damit der Client und Server kommunizieren können werden Web-sockets verwendet.
+Socket.io ist hier eine Performante und Zuverlässige lösung. 
+Außerdem ist Socket.io gut dokumentiert und leicht verständlich.
+
+https://socket.io/
 
 **ChatGPT API:**
 
@@ -376,14 +389,11 @@ https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
 
 Eine solche Funktion wäre für unsere Lernplattform im CodeSenpai bereich eine Bereicherung.
 
-Hier sollen sämtliche Schnittstellen definiert werden:
+**Datenbank:**
 
-* die externen Schnittstellen nach außen. Über welche Schnittstelle kann z.B. der Client den Server erreichen?
-* die internen Schnittstellen der unter 3.2 definierten Softwarebausteine
-
-Es ist sinnvoll, wenn die API von denjenigen definiert werden, die die Anforderungen an die API kennen: in einem
-Client-Server-System haben die Client-Entwickler Anforderungen an die Backend-Entwickler, so dass in diesem Fall die
-Client-Entwickler die API definieren sollten, die dann vom Backend-Entwickler implementiert werden.
+Um auf die Oracle Datenbank zuzugreifen werden die Offiziellen Oracle Treiber verwendet.
+In kombination mit NOde.js wird hierfür im Projektverzeichnis das "oracledb"-Modul installiert und anschließend die 
+Oracle-Datenbank verbindung im Code hinterlegt.
 
 ## 3.3 Datenmodell
 

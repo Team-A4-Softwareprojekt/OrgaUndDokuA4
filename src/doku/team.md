@@ -148,3 +148,21 @@ Verfügen Sie über die notwendigen Kompetenzen?
    - Mögliche Fehler formulieren
    - Grober Zeitplan für zukünftige Meilensteinen 
    - Logo erstellung mittels KI
+
+
+## Protokoll 29.04.2024 14:00 Uhr
+
+### Spezifikation
+
+1. Erste React.js anwendung zu Test zwecken anschauen
+2. vorstellung Website Use Case Diagramme 
+3. besprechung Mockups und Design Richtlinien
+4. Aufgaben verteilung
+   - Leonie: account mockup
+   - Lewin: zustands diagramm und validierung
+   - Olli und Kevin: Swimlane-Diagramme für use cases
+   - Tobi: software architektur, api und Kanban
+5. Datenbank --> Oracle SQL Developer
+6. Kanban muss gefüllt werden
+
+nächstes Meeting: Donnerstag, 02.05.2024 14 Uhr
