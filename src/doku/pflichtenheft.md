@@ -23,7 +23,8 @@
 #### **Produktname:** Senpai
 
 #### **Beschreibung:**
-Senpai ist eine innovative Lernplattform, die sich an Menschen richtet, die Interesse am Programmieren haben, unabhängig von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
+Senpai ist eine innovative Lernplattform, die sich an Menschen richtet, die Interesse am Programmieren haben, unabhängig
+von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
 
 **Kernfunktionen:**
 - **Code Battle:** Fordere dich selbst heraus und messe dich mit anderen in unterhaltsamen Code-Duellen, um dein Wissen spielerisch zu erweitern.
@@ -61,8 +62,14 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 ## 2.2 Funktionale Anforderungen
 
-* ggfs. Use-Case Diagramme (Kevin)
-* Strukturierung der Diagramme in funktionale Gruppen (Kevin)
+#### Account
+![](../Artefacts/UCD/Account_Navigation.png)
+
+#### Activities
+![](../Artefacts/UCD/Activities.png)
+
+#### Payment
+![](../Artefacts/UCD/Payment.png)
 
 ### Definition der Akteure
 
@@ -156,7 +163,7 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 | Stabilität                 | -        | -   | X      | -              |
 | Prüfbarkeit                | -        | X   | -      | -              |
 
-## 2.4 Graphische Benutzerschnittstelle (Mockups einfügen)
+## 2.4 Graphische Benutzerschnittstelle
 
 #### Startseite
 
@@ -214,6 +221,8 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 **Bearbeitung**
 ![](../Artefacts/Mockups_V1/ExerciseScreen.png)
 
+#### Account (Leonie)
+
 
 * GUI-Mockups passend zu User Stories
 
@@ -221,7 +230,7 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 * Unter den Screens darstellen (bzw. verlinken), welche User Stories mit dem Screen abgehandelt werden
 
-* Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
+* Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm (Lewin)
 
 * Mockups für unterschiedliche Akteure
 
@@ -291,6 +300,13 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 **Was:** Möchte ich benachrichtigt werden, wenn meine Übungen korrigiert wurden.  
 **Warum:** Um Feedback zu meinen Lösungen zu erhalten und meine Lernfortschritte zu überprüfen.  
 **Wann akzeptiert:** Wenn ich eine Benachrichtigung per E-Mail oder auf der Plattform erhalte, sobald meine Übung von einem Tutor korrigiert wurde.
+
+## 2.6 Design Richtlinien
+
+* Hintergrundfarbe
+* Schriftart
+* Format
+* Interaktionsmöglichkeiten (Größe, Position, Sichtbarkeit)
 
 # 3 Technische Beschreibung
 
@@ -372,13 +388,13 @@ Client-Entwickler die API definieren sollten, die dann vom Backend-Entwickler im
 ## 3.3 Datenmodell
 
 **Vorläufiges ER-Diagramm (V1)**
-![](../Artefacts/ER-Diagramm_v1.png)
+![](../Artefacts/ERD/ER-Diagramm_v2.png)
 
 * Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomäne)
 * Modellierung des physikalischen Datenmodells
 * RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
-## 3.4 Abläufe (folgt)
+## 3.4 Abläufe (Olli, Kevin)
 
 * Aktivitätsdiagramme für relevante Use Cases
 
@@ -416,17 +432,17 @@ Auflistung möglicher Fehler / Exceptions
 
 * Fehlercodes: (folgt)
 
-## 3.7 Validierung (folgt)
+## 3.7 Validierung (Lewin)
 
 * Relevante (Integrations)-Testfälle, die aus den Use Cases abgeleitet werden können
 
 * Testfälle für
 
-* Datenmodell
+  * Datenmodell
 
-* API
+  * API
 
-* User Interface
+  * User Interface
 
 * Fokussieren Sie mehr auf Integrationstestfälle als auf Unittests
 
