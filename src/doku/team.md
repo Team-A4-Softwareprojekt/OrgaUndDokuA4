@@ -166,3 +166,23 @@ Verfügen Sie über die notwendigen Kompetenzen?
 6. Kanban muss gefüllt werden
 
 nächstes Meeting: Donnerstag, 02.05.2024 14 Uhr
+
+
+## Protokoll 02.05.2024 15:00 Uhr
+
+1. Besprechung der erledigten aufgaben
+   - vorstellung des Zustands-/Flussdiagramms für die Website Navigation 
+   - Mockup zur Accountübersicht 
+   - Vorstellung Aktivitätsdiagramme  
+
+2. kleinere veränderungen an den Mockups
+   - logged in Seite anpassen 
+   - dedizierte Ansicht für Tutoren
+
+3. weitere Aufgaben:
+   - Wie wird die PWA umgesetzt? weitere Recherche notwendig
+   - Mockup für Lobbysuche?
+   - aktivitätsdiagramm buzzer ausbessern (reihenfolge bei falscher antwort)
+   - restlich aktivitätsdiagramme erstellen
+
+nächster Termin 04.05.2024 11:00 Uhr
