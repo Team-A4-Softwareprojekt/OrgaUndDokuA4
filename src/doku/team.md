@@ -170,6 +170,8 @@ nächstes Meeting: Donnerstag, 02.05.2024 14 Uhr
 
 ## Protokoll 02.05.2024 15:00 Uhr
 
+### Spezifikation
+
 1. Besprechung der erledigten aufgaben
    - vorstellung des Zustands-/Flussdiagramms für die Website Navigation 
    - Mockup zur Accountübersicht 
@@ -186,3 +188,22 @@ nächstes Meeting: Donnerstag, 02.05.2024 14 Uhr
    - restlich aktivitätsdiagramme erstellen
 
 nächster Termin 04.05.2024 11:00 Uhr
+
+
+## Protokoll 04.05.2024 11:00 Uhr - 13:00 Uhr
+
+### Spezifikation
+
+1. Besprechung der verbleibenden Aktivitätsdiagramme
+   - genauere betrachtung des Limitation games und klärung der spielregeln
+      - globales Zeitlimit für alle spieler 
+      - jeder spieler hat ein zeichen limit und ein Zeitlimit
+      - bei Erreichen des Zeichenlimits kann frühzeitig an den mitspieler übergeben werden
+      - bei Erreichen des Zeitlimits wird automatisch an den mitspieler übergeben
+      - die Teams können frühzeitig abgeben, wodurch dem gegnerischen Team ein Zeitlimit von weiteren 30 sek verbleibt
+      - spieler sind so lange abwechselnd dran, bis entweder das Globale-zeitlimit abgelaufen, sie selbst frühzeitig abgeben oder
+        die Zeitbegrenzung durch frühzeitiges abgeben des Gegnerteams abgelaufen ist 
+
+2. Vervollständigung des Pflichtenhefts
+3. Ace Code Editor als IDE für die Website
+4. Vorstellung der funktionalität von Socket.io für alle 
