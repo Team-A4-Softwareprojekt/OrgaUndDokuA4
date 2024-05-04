@@ -103,11 +103,16 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 * Stellt eine Schnittstelle bereit, die es der Webanwendung ermöglicht, Code zu kompilieren
     * Bereitstellung von Methoden und Funktionen zum Einreichen von Code
 
+**ACE Code Editor (API)**
+
+* Stellt eine Schnittstelle bereit, die es ermöglicht den Code Editor in die Webanwendung zu implementierung
+  * entspricht den Funktionen und der Leistung nativer Editoren
+  
 **ChatGPT (API)**
 
 * Stellt eine Schnittstelle bereit, über die die Einreichungen an die KI gesendet werden können, um sie zu bewerten
-    * Bereitstellung von Methoden und Funktionen zum Senden von Texteingaben und zum Empfangen von
-      Bewertungsergebnissen.
+    * Bereitstellung von Methoden und Funktionen zum Senden von Texteingaben und zum Empfangen von Bewertungsergebnissen.
+
 
 * Akteure sowie andere Begriffe der implementierten Fachdomäne definieren
 * Begriffe konsistent in der Spezifikation verwenden
@@ -376,6 +381,19 @@ https://www.youtube.com/watch?v=zRkHk2WZwjc
 https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
 
 Eine solche Funktion wäre für unsere Lernplattform im CodeSenpai bereich eine Bereicherung.
+
+**ACE Code Editor API:**
+
+ACE ist ein Open-Source "High Performance Code Editor for the Web". 
+Ace kann einfach in jede Website oder JavaScript Anwendung eingebaut werden.
+
+https://ace.c9.io/
+
+Der Open-Source Code ist auf Github verfügbar:
+
+https://github.com/ajaxorg/ace
+
+Ace bietet eine hervorragende Seite mit ausführlichen Anleitungen und wird als "einfache" Lösung dargestellt.
 
 **Datenbank:**
 
