@@ -23,7 +23,8 @@
 #### **Produktname:** Senpai
 
 #### **Beschreibung:**
-Senpai ist eine innovative Lernplattform, die sich an Menschen richtet, die Interesse am Programmieren haben, unabhängig von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
+Senpai ist eine innovative Lernplattform, die sich an Menschen richtet, die Interesse am Programmieren haben, unabhängig
+von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
 
 **Kernfunktionen:**
 - **Code Battle:** Fordere dich selbst heraus und messe dich mit anderen in unterhaltsamen Code-Duellen, um dein Wissen spielerisch zu erweitern.
@@ -61,8 +62,14 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 ## 2.2 Funktionale Anforderungen
 
-* ggfs. Use-Case Diagramme (Kevin)
-* Strukturierung der Diagramme in funktionale Gruppen (Kevin)
+#### Account
+![](../Artefacts/UCD/Account_Navigation.png)
+
+#### Activities
+![](../Artefacts/UCD/Activities.png)
+
+#### Payment
+![](../Artefacts/UCD/Payment.png)
 
 ### Definition der Akteure
 
@@ -156,23 +163,22 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 | Stabilität                 | -        | -   | X      | -              |
 | Prüfbarkeit                | -        | X   | -      | -              |
 
-## 2.4 Graphische Benutzerschnittstelle (Mockups einfügen)
+## 2.4 Graphische Benutzerschnittstelle
 
 #### Startseite
-
 ![](../Artefacts/Mockups_V1/StartScreen.png)
 
 #### Login
-
 ![](../Artefacts/Mockups_V1/Login.png)
 
 #### Auswahl der Lerninhalte (Senpai-Spezifikation)
-
 ![](../Artefacts/Mockups_V1/SenpaiSpezifikationAuswahl.png)
 
 #### Lernplattform Übersicht
-
 ![](../Artefacts/Mockups_V1/loggedin.png)
+
+#### Aufgaben Übersicht
+![](../Artefacts/Mockups_V1/tutorübersicht.png)
 
 ##### Daily-Challenge
 
@@ -214,18 +220,11 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 **Bearbeitung**
 ![](../Artefacts/Mockups_V1/ExerciseScreen.png)
 
+#### Account
+![](../Artefacts/Mockups_V1/account.png)
 
-* GUI-Mockups passend zu User Stories
-
-* Screens mit Überschrift kennzeichnen, die im Inhaltsverzeichnis zu sehen ist
-
-* Unter den Screens darstellen (bzw. verlinken), welche User Stories mit dem Screen abgehandelt werden
-
-* Modellierung der Navigation zwischen den Screens der GUI-Mockups als Zustandsdiagramm
-
-* Mockups für unterschiedliche Akteure
-
-* Mockups für unterschiedliche Frontends (Mobil, Web, Desktop)
+#### Navigation zwischen den Screens
+![](../Artefacts/Mockups_V1/navigation.PNG)
 
 ## 2.5 Anforderungen im Detail
 
@@ -292,6 +291,13 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 **Warum:** Um Feedback zu meinen Lösungen zu erhalten und meine Lernfortschritte zu überprüfen.  
 **Wann akzeptiert:** Wenn ich eine Benachrichtigung per E-Mail oder auf der Plattform erhalte, sobald meine Übung von einem Tutor korrigiert wurde.
 
+## 2.6 Design Richtlinien
+
+* Hintergrundfarbe
+* Schriftart
+* Format
+* Interaktionsmöglichkeiten (Größe, Position, Sichtbarkeit)
+
 # 3 Technische Beschreibung
 
 ## 3.1 Systemübersicht
@@ -324,23 +330,21 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 **Client:**
 
-    * React.js (JavaScript und XML (JSX)), 
-    * Github-Pages
-    * Socket.io (Kommunikation zum Server)
+  * React.js (JavaScript und XML (JSX)) 
+  * Github-Pages
+  * Socket.io (Kommunikation zum Server)
 
 **Server:**
 
-    * Node.js (JavaScript), 
-    * CI/CD via Render
-    * Socket.io (Kommunikation zum Client)
+  * Node.js (JavaScript), 
+  * CI/CD via Render
+  * Socket.io (Kommunikation zum Client)
 
 **Datenbank:**
 
-    * Oracle SQL Developer
+  * Oracle SQL Developer
 
-
-
-## 3.3 Schnittstellen (Tobi)
+## 3.3 Schnittstellen
 
 **WebSocket-API (socket.io):**
 
@@ -382,25 +386,42 @@ Oracle-Datenbank verbindung im Code hinterlegt.
 ## 3.3 Datenmodell
 
 **Vorläufiges ER-Diagramm (V1)**
-![](../Artefacts/ER-Diagramm_v1.png)
+![](../Artefacts/ERD/ER-Diagramm_v2.png)
 
 * Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomäne)
 * Modellierung des physikalischen Datenmodells
 * RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
-## 3.4 Abläufe (folgt)
+## 3.4 Abläufe
 
-* Aktivitätsdiagramme für relevante Use Cases
+#### Login
+![](../Artefacts/Aktivitätsdiagramme_V1/Login_2.png)
 
-* Aktivitätsdiagramm für den Ablauf sämtlicher Use Cases
-* Aktivitätsdiagramm mit Swimlanes sind in der Regel hilfreich für die Darstellung der Interaktion von Akteuren der Use
-  Cases / User Stories
+#### Registrierung
+![](../Artefacts/Aktivitätsdiagramme_V1/Registration.png)
 
-* Abläufe der Kommunikation von Rechnerknoten (z.B. Client/Server)
-  in einem Sequenz- oder Aktivitätsdiagramm darstellen
+#### Payment
+![](../Artefacts/Aktivitätsdiagramme_V1/Payment.png)
 
-* Modellieren Sie des weiteren die Diagramme, die für das (eigene) Verständnis des
-  Softwaresystems hilfreich sind.
+#### Buzzer
+![](../Artefacts/Aktivitätsdiagramme_V1/Buzzer.png)
+
+#### Exercise
+![](../Artefacts/Aktivitätsdiagramme_V1/Exercise.png)
+
+#### Tutor Exercise
+![](../Artefacts/Aktivitätsdiagramme_V1/Tutor_Exercise.png)
+
+#### Manipulation
+
+##### Player 1
+![](../Artefacts/Aktivitätsdiagramme_V1/Manipulation_P1.png)
+
+##### Player 2
+![](../Artefacts/Aktivitätsdiagramme_V1/Manipulation_P2.png)
+
+#### Limitation
+![](../Artefacts/Aktivitätsdiagramme_V1/Limitation.png)
 
 ## 3.5 Entwurf (folgt)
 
@@ -426,22 +447,50 @@ Auflistung möglicher Fehler / Exceptions
 
 * Fehlercodes: (folgt)
 
-## 3.7 Validierung (folgt)
+## 3.7 Validierung
 
-* Relevante (Integrations)-Testfälle, die aus den Use Cases abgeleitet werden können
+### Einloggen:
+- **Account nicht gefunden:**
+  - **Testfall 1:** Geben Sie einen ungültigen Benutzernamen ein und überprüfen Sie, ob die entsprechende Fehlermeldung angezeigt wird.
+  - **Testfall 2:** Geben Sie einen existierenden Benutzernamen mit einem Rechtschreibfehler ein und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
+  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der eingegebene Benutzername vorhanden ist.
 
-* Testfälle für
+- **Falsches Passwort:**
+  - **Testfall:** Geben Sie das falsche Passwort für einen vorhandenen Benutzer ein und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
+  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob das eingegebene Passwort mit dem Passwort des Benutzers übereinstimmt.
 
-* Datenmodell
+### Registrierung:
+- **E-Mail bereits vergeben:**
+  - **Testfall:** Versuchen Sie, sich mit einer bereits verwendeten E-Mail-Adresse zu registrieren, und überprüfen Sie, ob die entsprechende Fehlermeldung angezeigt wird.
+  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob die E-Mail-Adresse bereits vorhanden ist.
 
-* API
+- **Accountname vergeben:**
+  - **Testfall:** Wählen Sie einen Benutzernamen, der bereits von einem anderen Benutzer verwendet wird, und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
+  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der Benutzername bereits vorhanden ist.
 
-* User Interface
+- **Passwort erfüllt nicht die Anforderungen:**
+  - **Testfall:** Verwenden Sie ein Passwort, das weniger als die erforderliche Mindestanzahl von Zeichen enthält, und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
 
-* Fokussieren Sie mehr auf Integrationstestfälle als auf Unittests
+### Spiele:
+- **Weiterspielen trotz aufgebrauchter Leben:**
+  - **Testfall:** Versuchen Sie, ein Spiel fortzusetzen, nachdem alle Leben aufgebraucht wurden, und überprüfen Sie, ob das System dies korrekt verhindert.
+  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
 
-Es bietet sich an, die IDs der Use Cases / User Stories mit den Testfällen zu verbinden, sodass erkennbar ist, ob Sie
-alle Use Cases getestet haben.
+- **User-Interaktionen entgegengesetzt der Spielregeln:**
+  - **Testfall:** Versuchen Sie, eine Aktion auszuführen, die den Spielregeln widerspricht, und überprüfen Sie, ob das System dies erkennt und entsprechend handelt.
+  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
+
+- **Gegenspieler verlässt das Spiel:**
+  - **Testfall:** Simulieren Sie, dass ein Gegenspieler das Spiel verlässt, und überprüfen Sie, ob das Spiel korrekt beendet wird und ein entsprechender Hinweis angezeigt wird.
+  - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
+
+- **Verbindung wird unterbrochen:**
+  - **Testfall:** Unterbrechen Sie die Internetverbindung während eines laufenden Spiels und überprüfen Sie, ob das Spiel korrekt auf die Unterbrechung reagiert.
+  - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
+
+- **Streak der Daily Challenge wird automatisch fortgeführt:**
+  - **Testfall:** Überprüfen Sie, ob die Streak der Daily Challenge korrekt fortgesetzt wird, wenn der Benutzer nach einem Unterbruch des Spiels wieder einsteigt.
+  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden und in der Datenbank, ob die Streak richtig hochgezählt oder zurückgesetzt wurde.
 
 # 4 Projektorganisation
 
