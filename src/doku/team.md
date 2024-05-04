@@ -7,8 +7,8 @@
 | **21.04.2024** | Ausarbeitung der Präsentation und des Fließtextes |   Stunden   |
 | **25.04.2024** |        Informationen aus Recherchen teilen        |  3 Stunden  |
 | **29.04.2024** |                Besprechung Mockups                | 1,5 Stunden |
-| **02.05.2024** |          Besprechung Aktivitätsdiagramme          |   Stunden   |
-| **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |   Stunden   |
+| **02.05.2024** |          Besprechung Aktivitätsdiagramme          | 1,5 Stunden |
+| **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |  2 Stunden  |
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
 
