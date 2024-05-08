@@ -9,6 +9,8 @@
 | **29.04.2024** |                Besprechung Mockups                | 1,5 Stunden |
 | **02.05.2024** |          Besprechung Aktivitätsdiagramme          | 1,5 Stunden |
 | **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |  2 Stunden  |
+| **08.05.2024** |            Nachbesprechung und Planung            | 1,5 Stunden |
+
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
 
@@ -207,3 +209,22 @@ nächster Termin 04.05.2024 11:00 Uhr
 2. Vervollständigung des Pflichtenhefts
 3. Ace Code Editor als IDE für die Website
 4. Vorstellung der funktionalität von Socket.io für alle 
+
+
+## Protokoll 08.05.2024 11:00 Uhr - 12:30 Uhr
+
+1. Nachbesprechung von Montag
+2. weiteres Vorgehen besprechen
+3. Schnittstellen definieren
+    - registration
+    - login
+    - forgotPassword
+
+4. verbleibende aufgaben:
+    - RESTful Schnittstelle recherchieren 
+    - PostgreSQL mit render recherche
+    - PWA recherche
+    - WebApp-Repository einrichten mit react 
+    - recherche: react auf github pages deployen
+
+für weiters Infos --> Kanban Board

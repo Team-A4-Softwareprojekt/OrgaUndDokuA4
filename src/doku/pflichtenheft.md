@@ -543,12 +543,11 @@ Auflistung möglicher Fehler / Exceptions
 
 * Rollendefinition und Zuordnung
 
-| Softwarebaustein | Person(en)    |
-|------------------|---------------|
-| Server           | Lewin         |
-| Datenbank        | Leonie        |
-| Backend          | Tobias, Kevin |
-| Frontend         | Oliver        |
+| Softwarebaustein    | Person(en)            |
+|---------------------|-----------------------|
+| Backend (Server)    | Lewin                 |
+| Backend (Datenbank) | Leonie                |
+| Frontend            | Oliver, Tobias, Kevin |
 
 ### Rollen
 
