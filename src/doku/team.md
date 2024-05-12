@@ -225,6 +225,18 @@ nächster Termin 04.05.2024 11:00 Uhr
     - PostgreSQL mit render recherche
     - PWA recherche
     - WebApp-Repository einrichten mit react 
-    - recherche: react auf github pages deployen
+    - Recherche: react auf GitHub pages deployen
 
 für weiters Infos --> Kanban Board
+
+
+## Protokoll 12.05.2024 10:15 Uhr - 12:30 Uhr
+
+1. besprechung der Rest-Schnittstelle
+2. Vorstellung der ersten React Seite 
+3. Website deployment (Sowohl main als auch development)
+4. besprechung der branching strategien
+5. Rest Schnittstellen implementieren für Website und Server kommunikation
+6. Besprechung des aktuellen Standes der Datenbank
+    - PostgreSQL bei Render gehostet
+    - DBeaver als Programm
