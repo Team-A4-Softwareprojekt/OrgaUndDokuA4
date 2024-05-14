@@ -10,6 +10,8 @@
 | **02.05.2024** |          Besprechung Aktivitätsdiagramme          | 1,5 Stunden |
 | **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |  2 Stunden  |
 | **08.05.2024** |            Nachbesprechung und Planung            | 1,5 Stunden |
+| **12.05.2024** |                Website deployment                 | 1,5 Stunden |
+| **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -240,3 +242,10 @@ für weiters Infos --> Kanban Board
 6. Besprechung des aktuellen Standes der Datenbank
     - PostgreSQL bei Render gehostet
     - DBeaver als Programm
+
+
+## Protokoll 14.05.2024 11 Uhr - 13:30 Uhr
+
+1. Datenbank verbindung im Server implementieren
+2. Login funktionalität serverseitig und clientseitig inklusive übermittlung zur Datenbank
+3. weitere aufgabenplanung (siehe Kanban)
