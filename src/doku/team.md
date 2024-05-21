@@ -12,6 +12,7 @@
 | **08.05.2024** |            Nachbesprechung und Planung            | 1,5 Stunden |
 | **12.05.2024** |                Website deployment                 | 1,5 Stunden |
 | **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden |
+| **21.05.2024** |                  Wochenüberblick                  |  2 Stunden  |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -249,3 +250,13 @@ für weiters Infos --> Kanban Board
 1. Datenbank verbindung im Server implementieren
 2. Login funktionalität serverseitig und clientseitig inklusive übermittlung zur Datenbank
 3. weitere aufgabenplanung (siehe Kanban)
+
+
+## Protokoll 21.05.2024 17:00 Uhr - 19:00 Uhr
+
+1. Zusammen tragen des aktuellen standes
+    - account seite 
+    - buzzer server logic
+    - MVP: Login, registrieren, Anmelden, Daily Challenge, Buzzer 
+    - mergen der features in den dvelopment branch
+2. Website hosting probleme angehen
