@@ -18,32 +18,42 @@
 
 # 1 Einführung
 
-## 1.1 Beschreibung 
+## 1.1 Beschreibung
 
 #### **Produktname:** Senpai
 
 #### **Beschreibung:**
+
 Senpai ist eine innovative Lernplattform, die sich an Menschen richtet, die Interesse am Programmieren haben, unabhängig
-von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
+von ihrem Erfahrungsniveau. Unser Ziel ist es, Programmierkenntnisse auf unterhaltsame und zugängliche Weise zu
+vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um das Wissen zu vertiefen und zu festigen.
 
 **Kernfunktionen:**
-- **Code Battle:** Fordere dich selbst heraus und messe dich mit anderen in unterhaltsamen Code-Duellen, um dein Wissen spielerisch zu erweitern.
-- **Daily Challenge:** Nimm täglich an Herausforderungen teil, um deine Fähigkeiten zu verbessern und eine kontinuierliche Lernroutine aufzubauen.
-- **Exercise:** Bearbeite komplexe Aufgaben in verschiedenen Kategorien und erhalte individuelles Feedback von erfahrenen Tutoren, um dein Verständnis zu vertiefen.
-- **Accountverwaltung:** Verwalte einfach dein Profil, speichere deine Fortschritte und behalte den Überblick über deine Lernreise.
+
+- **Code Battle:** Fordere dich selbst heraus und messe dich mit anderen in unterhaltsamen Code-Duellen, um dein Wissen
+  spielerisch zu erweitern.
+- **Daily Challenge:** Nimm täglich an Herausforderungen teil, um deine Fähigkeiten zu verbessern und eine
+  kontinuierliche Lernroutine aufzubauen.
+- **Exercise:** Bearbeite komplexe Aufgaben in verschiedenen Kategorien und erhalte individuelles Feedback von
+  erfahrenen Tutoren, um dein Verständnis zu vertiefen.
+- **Accountverwaltung:** Verwalte einfach dein Profil, speichere deine Fortschritte und behalte den Überblick über deine
+  Lernreise.
 
 **Monetarisierung:**
+
 - Kostenlose Nutzung mit begrenzten Funktionen
 - Premium-Mitgliedschaft für uneingeschränkten Zugang und individuelles Feedback von Tutoren
 
 **Zielgruppe:**
+
 - Anfänger, die in die Welt des Programmierens eintauchen möchten
 - Fortgeschrittene, die ihre Kenntnisse vertiefen und festigen möchten
 - Tutoren, die ihr Wissen weitergeben und von der Plattform profitieren möchten
 
 **Warum Senpai:**
-Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen und individuellem Feedback bietet Senpai eine einzigartige Lernerfahrung, die sowohl motivierend als auch effektiv ist. Egal, ob du gerade erst anfängst oder bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierexperten.
-
+Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen und individuellem Feedback bietet Senpai
+eine einzigartige Lernerfahrung, die sowohl motivierend als auch effektiv ist. Egal, ob du gerade erst anfängst oder
+bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierexperten.
 
 # 2 Anforderungen
 
@@ -63,12 +73,15 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 ## 2.2 Funktionale Anforderungen
 
 #### Account
+
 ![](../Artefacts/UCD/Account_Navigation.png)
 
 #### Activities
+
 ![](../Artefacts/UCD/Activities.png)
 
 #### Payment
+
 ![](../Artefacts/UCD/Payment.png)
 
 ### Definition der Akteure
@@ -106,12 +119,13 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 **ACE Code Editor (API)**
 
 * Stellt eine Schnittstelle bereit, die es ermöglicht den Code Editor in die Webanwendung zu implementierung
-  * entspricht den Funktionen und der Leistung nativer Editoren
-  
+    * entspricht den Funktionen und der Leistung nativer Editoren
+
 **ChatGPT (API)**
 
 * Stellt eine Schnittstelle bereit, über die die Einreichungen an die KI gesendet werden können, um sie zu bewerten
-    * Bereitstellung von Methoden und Funktionen zum Senden von Texteingaben und zum Empfangen von Bewertungsergebnissen.
+    * Bereitstellung von Methoden und Funktionen zum Senden von Texteingaben und zum Empfangen von
+      Bewertungsergebnissen.
 
 
 * Akteure sowie andere Begriffe der implementierten Fachdomäne definieren
@@ -121,16 +135,23 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 ## 2.3 Nicht-funktionale Anforderungen
 
 **Leistungsanforderungen:**
-* Benutzerzahl: Die Webanwendung soll für Testzwecke eine geringe Anzahl an parallelen Benutzern zulassen. Wichtig ist, dass eine einfache Skalierung zulässiger Nutzer möglich bleibt.
+
+* Benutzerzahl: Die Webanwendung soll für Testzwecke eine geringe Anzahl an parallelen Benutzern zulassen. Wichtig ist,
+  dass eine einfache Skalierung zulässiger Nutzer möglich bleibt.
 * Datenumfang: Die Anwendung verfügt über genug Daten, sodass alle Spielmodi funktional lauffähig sind
-* Zeitverhalten: Die Webanwendung soll schnelle Reaktionszeit aufweisen, sodass eine flüssige Nutzung der Anwendung möglich wird
+* Zeitverhalten: Die Webanwendung soll schnelle Reaktionszeit aufweisen, sodass eine flüssige Nutzung der Anwendung
+  möglich wird
 
 **Qualitätsanforderungen:**
-* IT-Sicherheit: Die Webanwendung soll nicht von außen beeinflussbar sein, in der Datenbank gespeicherte Daten sind für Außenstehende unzugänglich
+
+* IT-Sicherheit: Die Webanwendung soll nicht von außen beeinflussbar sein, in der Datenbank gespeicherte Daten sind für
+  Außenstehende unzugänglich
 * Robustheit: Das System biete für eine längere Periode ein kontinuierliches Spielerlebnis ohne Neustarten zu müssen.
 
 **Realitätsanforderungen:**
-* Dokumentation: Sämtlicher Code wird vollständig auf Englisch kommentiert. Ideen werden in den Meeting-Protokollen und als Kanban-Eintrag festgehalten
+
+* Dokumentation: Sämtlicher Code wird vollständig auf Englisch kommentiert. Ideen werden in den Meeting-Protokollen und
+  als Kanban-Eintrag festgehalten
 * Richtlinien: Commit, Kommentierung
 
 ### 2.3.1 Rahmenbedingungen
@@ -171,18 +192,23 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 ## 2.4 Graphische Benutzerschnittstelle
 
 #### Startseite
+
 ![](../Artefacts/Mockups_V1/StartScreen.png)
 
 #### Login
+
 ![](../Artefacts/Mockups_V1/Login.png)
 
 #### Auswahl der Lerninhalte (Senpai-Spezifikation)
+
 ![](../Artefacts/Mockups_V1/SenpaiSpezifikationAuswahl.png)
 
 #### Lernplattform Übersicht
+
 ![](../Artefacts/Mockups_V1/loggedin.png)
 
 #### Aufgaben Übersicht
+
 ![](../Artefacts/Mockups_V1/tutorübersicht.png)
 
 ##### Daily-Challenge
@@ -226,9 +252,11 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 ![](../Artefacts/Mockups_V1/ExerciseScreen.png)
 
 #### Account
+
 ![](../Artefacts/Mockups_V1/account.png)
 
 #### Navigation zwischen den Screens
+
 ![](../Artefacts/Mockups_V1/navigation.PNG)
 
 ## 2.5 Anforderungen im Detail
@@ -237,29 +265,35 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 
 **Wer:** Als registrierter Nutzer von Senpai  
 **Was:** Möchte ich meinen Account verwalten können.  
-**Warum:** Um meine persönlichen Informationen zu aktualisieren, mein Passwort zu ändern und gegebenenfalls meinen Account zu löschen.  
-**Wann akzeptiert:** Wenn ich auf meiner Profilseite einfache Optionen zur Bearbeitung meiner Kontoinformationen finde und diese Änderungen nahtlos umgesetzt werden.
+**Warum:** Um meine persönlichen Informationen zu aktualisieren, mein Passwort zu ändern und gegebenenfalls meinen
+Account zu löschen.  
+**Wann akzeptiert:** Wenn ich auf meiner Profilseite einfache Optionen zur Bearbeitung meiner Kontoinformationen finde
+und diese Änderungen nahtlos umgesetzt werden.
 
 #### Benutzerstory 2: Speichern von Login-Daten
 
 **Wer:** Als registrierter Nutzer von Senpai  
 **Was:** Möchte ich, dass meine Login-Daten gespeichert werden, damit ich mich nicht jedes Mal neu anmelden muss.  
 **Warum:** Um den Anmeldevorgang zu beschleunigen und die Benutzererfahrung zu verbessern.  
-**Wann akzeptiert:** Wenn ich die Option habe, meine Anmeldeinformationen zu speichern, und automatisch angemeldet werde, wenn ich die Website erneut besuche.
+**Wann akzeptiert:** Wenn ich die Option habe, meine Anmeldeinformationen zu speichern, und automatisch angemeldet
+werde, wenn ich die Website erneut besuche.
 
 #### Benutzerstory 3: Anzeige der Lebenspunkte
 
 **Wer:** Als Nutzer von CodeSenpai, der an Code Battles teilnimmt  
 **Was:** Möchte ich immer sehen, wie viele "Leben" ich noch habe.  
-**Warum:** Um meine verbleibenden Versuche im Auge zu behalten und zu wissen, wann ich weitere "Leben" erwerben muss, um weiterzuspielen.  
-**Wann akzeptiert:** Wenn meine verbleibenden "Leben" deutlich auf der Code Battle-Seite angezeigt werden und sich entsprechend aktualisieren, wenn ich weitere "Leben" erwerbe oder verliere.
+**Warum:** Um meine verbleibenden Versuche im Auge zu behalten und zu wissen, wann ich weitere "Leben" erwerben muss, um
+weiterzuspielen.  
+**Wann akzeptiert:** Wenn meine verbleibenden "Leben" deutlich auf der Code Battle-Seite angezeigt werden und sich
+entsprechend aktualisieren, wenn ich weitere "Leben" erwerbe oder verliere.
 
 #### Benutzerstory 4: Einfache Navigation durch Aufgaben
 
 **Wer:** Als Nutzer von CodeSenpai, der Übungen bearbeitet  
 **Was:** Möchte ich mich möglichst einfach durch die Aufgaben navigieren können.  
 **Warum:** Um effizient zwischen verschiedenen Übungen zu wechseln und meine Zeit effektiv zu nutzen.  
-**Wann akzeptiert:** Wenn ich klare Navigationselemente habe, die es mir ermöglichen, zwischen Aufgaben zu wechseln, und wenn die Ladezeiten der Aufgaben minimal sind.
+**Wann akzeptiert:** Wenn ich klare Navigationselemente habe, die es mir ermöglichen, zwischen Aufgaben zu wechseln, und
+wenn die Ladezeiten der Aufgaben minimal sind.
 
 #### Benutzerstory 5: Code-Highlighting
 
@@ -271,30 +305,36 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 #### Benutzerstory 6: Schnelle Rückmeldung für Übungen
 
 **Wer:** Als Nutzer von CodeSenpai, der Übungen abschließt  
-**Was:** Möchte ich möglichst schnell Rückmeldung erhalten (Via KI oder Tutor), wenn ich eine Übung abgeschlossen habe.  
-**Warum:** Um zu wissen, ob meine Lösung korrekt ist und um schnell mit dem nächsten Schritt in meiner Lernreise fortzufahren.  
-**Wann akzeptiert:** Wenn ich unmittelbar nach dem Einreichen meiner Lösung eine Rückmeldung erhalte und weiß, ob meine Antwort korrekt ist oder nicht.
+**Was:** Möchte ich möglichst schnell Rückmeldung erhalten (Via KI oder Tutor), wenn ich eine Übung abgeschlossen
+habe.  
+**Warum:** Um zu wissen, ob meine Lösung korrekt ist und um schnell mit dem nächsten Schritt in meiner Lernreise
+fortzufahren.  
+**Wann akzeptiert:** Wenn ich unmittelbar nach dem Einreichen meiner Lösung eine Rückmeldung erhalte und weiß, ob meine
+Antwort korrekt ist oder nicht.
 
 #### Benutzerstory 7: Historie einsehen
 
 **Wer:** Als Nutzer von CodeSenpai  
 **Was:** Möchte ich sehen können, welche Aufgaben ich bereits bearbeitet habe.  
 **Warum:** Um meinen Fortschritt zu verfolgen und mich an vergangene Aktivitäten zu erinnern.  
-**Wann akzeptiert:** Wenn ich auf meiner Profilseite oder in einer separaten Historie-Seite eine Liste meiner bearbeiteten Aufgaben einsehen kann.
+**Wann akzeptiert:** Wenn ich auf meiner Profilseite oder in einer separaten Historie-Seite eine Liste meiner
+bearbeiteten Aufgaben einsehen kann.
 
 #### Benutzerstory 8: Aufgaben aus Übersicht auswählen
 
 **Wer:** Als Nutzer von CodeSenpai  
 **Was:** Möchte ich die Möglichkeit haben, Aufgaben aus einer Übersicht auszuwählen.  
 **Warum:** Um gezielt nach bestimmten Aufgaben zu suchen und meine Lernziele effektiv zu verfolgen.  
-**Wann akzeptiert:** Wenn ich auf einer Übersichtsseite oder in einer Kategorieauswahl alle verfügbaren Aufgaben sehen und auswählen kann.
+**Wann akzeptiert:** Wenn ich auf einer Übersichtsseite oder in einer Kategorieauswahl alle verfügbaren Aufgaben sehen
+und auswählen kann.
 
 #### Benutzerstory 9: Über korrigierte Übungen benachrichtigt werden
 
 **Wer:** Als Nutzer von CodeSenpai, der Übungen einreicht  
 **Was:** Möchte ich benachrichtigt werden, wenn meine Übungen korrigiert wurden.  
 **Warum:** Um Feedback zu meinen Lösungen zu erhalten und meine Lernfortschritte zu überprüfen.  
-**Wann akzeptiert:** Wenn ich eine Benachrichtigung per E-Mail oder auf der Plattform erhalte, sobald meine Übung von einem Tutor korrigiert wurde.
+**Wann akzeptiert:** Wenn ich eine Benachrichtigung per E-Mail oder auf der Plattform erhalte, sobald meine Übung von
+einem Tutor korrigiert wurde.
 
 ## 2.6 Design Richtlinien
 
@@ -314,54 +354,57 @@ Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen 
 #### Drei-Schichten-Architektur:
 
 **Präsentationsschicht:**
-  - Web-Anwendung (ggf. PWA) als grafische Interaktionsschnittstelle
-  - Es wird die Open-Source JavaScript Bibliothek React.js verwendet, um die Benutzeroberfläche und
-    dessen Interaktion zu implementieren
-  - kommuniziert über Web-sockets mit der Logik-Schicht
-  - Website wird gehostet über Github-Pages
-  - kein direkter Zugriff auf die Datenbank
+
+- Web-Anwendung (ggf. PWA) als grafische Interaktionsschnittstelle
+- Es wird die Open-Source JavaScript Bibliothek React.js verwendet, um die Benutzeroberfläche und
+  dessen Interaktion zu implementieren
+- kommuniziert über Web-sockets mit der Logik-Schicht
+- Website wird gehostet über Github-Pages
+- kein direkter Zugriff auf die Datenbank
 
 **Logik-Schicht:**
-  - hierfür wird ebenfalls JavaScript mittels Node.js verwendet, um die Server-funktionalität zu stellen
-  - reagiert über Web-sockets auf Anfragen der Präsentationsschicht
-  - Serverfunktionalität wird gehostet auf Render.com
-  - zugriff auf Datenbank
+
+- hierfür wird ebenfalls JavaScript mittels Node.js verwendet, um die Server-funktionalität zu stellen
+- reagiert über Web-sockets auf Anfragen der Präsentationsschicht
+- Serverfunktionalität wird gehostet auf Render.com
+- zugriff auf Datenbank
 
 **Datenzugriffsschicht:**
-  - der Oracle SQL Developer wird verwendet, um die Datenbank aufzusetzen
-  - nur der Server kommuniziert mit der Datenbank
+
+- der Oracle SQL Developer wird verwendet, um die Datenbank aufzusetzen
+- nur der Server kommuniziert mit der Datenbank
 
 ### 3.2.1 Technologieauswahl
 
 **Client:**
 
-  * React.js (JavaScript und XML (JSX)) 
-  * Github-Pages
-  * Socket.io (Kommunikation zum Server)
+* React.js (JavaScript und XML (JSX))
+* Github-Pages
+* Socket.io (Kommunikation zum Server)
 
 **Server:**
 
-  * Node.js (JavaScript), 
-  * CI/CD via Render
-  * Socket.io (Kommunikation zum Client)
+* Node.js (JavaScript),
+* CI/CD via Render
+* Socket.io (Kommunikation zum Client)
 
 **Datenbank:**
 
-  * Oracle SQL Developer
+* Oracle SQL Developer
 
 ## 3.3 Schnittstellen
 
 **WebSocket-API (socket.io):**
 
 Damit der Client und Server kommunizieren können werden Web-sockets verwendet.
-Socket.io ist hier eine Performante und Zuverlässige lösung. 
+Socket.io ist hier eine Performante und Zuverlässige lösung.
 Außerdem ist Socket.io gut dokumentiert und leicht verständlich.
 
 https://socket.io/
 
 **ChatGPT API:**
 
-Die API von ChatGPT ermöglicht das Einbinden der KI in eigene Softwareprojekte. In diesem Projekt soll die KI eventuell 
+Die API von ChatGPT ermöglicht das Einbinden der KI in eigene Softwareprojekte. In diesem Projekt soll die KI eventuell
 genutzt werden, um ggf. automatisierte Korrekturen der Exercises zu bieten.
 
 https://openai.com/product
@@ -373,7 +416,7 @@ https://www.ionos.de/digitalguide/websites/web-entwicklung/chatgpt-api/
 **Visual Studio API:**
 
 Die Aufgaben unserer Lernplattform sollen Code-highlighting und IDE ähnliche funktionen wie z.B. Compilierung bieten.
-Auf GitHub kann der Code jedes repository Online im Browser in VSCode geöffnet werden, indem die URL von github.com zu 
+Auf GitHub kann der Code jedes repository Online im Browser in VSCode geöffnet werden, indem die URL von github.com zu
 github.dev geändert wird.
 
 https://www.youtube.com/watch?v=zRkHk2WZwjc
@@ -384,7 +427,7 @@ Eine solche Funktion wäre für unsere Lernplattform im CodeSenpai bereich eine 
 
 **ACE Code Editor API:**
 
-ACE ist ein Open-Source "High Performance Code Editor for the Web". 
+ACE ist ein Open-Source "High Performance Code Editor for the Web".
 Ace kann einfach in jede Website oder JavaScript Anwendung eingebaut werden.
 
 https://ace.c9.io/
@@ -398,8 +441,53 @@ Ace bietet eine hervorragende Seite mit ausführlichen Anleitungen und wird als 
 **Datenbank:**
 
 Um auf die Oracle Datenbank zuzugreifen werden die Offiziellen Oracle Treiber verwendet.
-In kombination mit NOde.js wird hierfür im Projektverzeichnis das "oracledb"-Modul installiert und anschließend die 
+In kombination mit NOde.js wird hierfür im Projektverzeichnis das "oracledb"-Modul installiert und anschließend die
 Oracle-Datenbank verbindung im Code hinterlegt.
+
+**Formulierung der Spielmodi-APIs:**
+
+Socket:
+Buzzer Queue → erstellt einen socket.room() platziert die socket.id des spieler dadrin und wartet auf einen 2ten,
+sendet ein TRUE an Buzzer_GameFound (CLIENT) wenn ein zweiter Socket den Room betritt/ hinzugefügt wird
+
+AWAIT_QUESTION → wenn beide Spieler in der Lobby die Funktion aufgerufen haben wir eine SQL Anfrage an die Datenbank
+gesendet, wodurch eine Frage per zufall ausgewählt wird, der Text der Frage wird an beide Clients übergeben
+SHOW_QUESTION(CLIENT), ein Timer zählt herunter und schickt regelmäßig die aktuelle Zeit an die 2 Clients. Es wird
+gezählt wie oft AWAIT QUESTION von der Lobby aufgerufen wird, wenn der Counter == 3 dann wird END_GAME (CLIENT)
+aufgerufen
+
+PLAYER_BUZZERED → blockiert den gegnerischen Buzzer indem DISABLE_BUZZER aufgerufen wird für den Spieler der NICHT
+gebuzzert hat, für den Spieler der gebuzzert hat, wird die Funktion PICK_ANSWER (CLIENT) aufgerufen
+
+COMPARE_ANSWER → fragt bei SQL die richtige Anwort der ausgewählten Frage an und vergleicht die Antwort vom Client. Die
+Methode merkt sich, welcher Client bereits geantwortet hat. Wenn beide bereits die Möglichkeit hatten zu antworten
+bekommt keiner einen Punkt.
+Wenn die Antwort richtig war, dann sende die richtige Antwort an beide Clients und füge einen Punkt dem Spieler hinzu
+der richtig geantwortet hat END_ROUND (CLIENT)
+→ Wenn die Antwort falsch war, dann ENABLE_BUZZER für den Gegenspieler und rufe PICK_ANSWER auf. 
+→ Wenn die Antwort richtig ist, dann sende die richtige Antwort an beide Clients und füge einen Punkt dem Spieler hinzu der richtig geantwortet hat 		END_ROUND (CLIENT)
+→ Wenn beide Spieler (falsch) geantwortet haben rufe END_ROUND auf 
+
+Client:
+Button "Buzzer" → ruft Socket Buzzer_Queue (SERVER) auf, zeigt Wartescreen bis an Buzzer_GameFound (CLIENT) ein TRUE
+gesendet wird
+
+Wurde ein TRUE empfangen, dann wird der Spielescreen geladen und ein AWAIT_QUESTION (SOCKET) aufgerufen
+
+Wenn SHOW_QUESTION aufgerufen wird, wird der Text in den Spielescreen geladen, hier kann der Spieler Buzzern. Wenn ein
+Spieler gebuzzert hat, wir die Funktion PLAYER_BUZZERED aufgerufen
+
+DISABLE_BUZZER → graut den Buzzer Button aus (keine Funktionalität)
+
+ENABLE_BUZZER → aktiviert die Funktionalität des Buzzers
+
+PICK_ANSWER → Ein Timer von 3 Sek startet, in der Zeit kann die Antwort angeklickt werden, wenn eine Antwort
+angegklickt wird oder die Zeit == 0, dann wird COMPARE_ANSWER (SERVER) aufgerufen
+
+END_ROUND → zeige die richtige Lösung an, danach ein weiteres Fenster mit dem Punktestand
+
+END_GAME → zeige einen Endscreen mit dem Gewinner (markiert) und dem Punktestand an, lösche die Lobby und disconnecte
+die Sockets
 
 ## 3.3 Datenmodell
 
@@ -413,32 +501,41 @@ Oracle-Datenbank verbindung im Code hinterlegt.
 ## 3.4 Abläufe
 
 #### Login
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Login_2.png)
 
 #### Registrierung
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Registration.png)
 
 #### Payment
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Payment.png)
 
 #### Buzzer
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Buzzer.png)
 
 #### Exercise
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Exercise.png)
 
 #### Tutor Exercise
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Tutor_Exercise.png)
 
 #### Manipulation
 
 ##### Player 1
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Manipulation_P1.png)
 
 ##### Player 2
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Manipulation_P2.png)
 
 #### Limitation
+
 ![](../Artefacts/Aktivitätsdiagramme_V1/Limitation.png)
 
 ## 3.5 Entwurf (folgt)
@@ -468,47 +565,63 @@ Auflistung möglicher Fehler / Exceptions
 ## 3.7 Validierung
 
 ### Einloggen:
+
 - **Account nicht gefunden:**
-  - **Testfall 1:** Geben Sie einen ungültigen Benutzernamen ein und überprüfen Sie, ob die entsprechende Fehlermeldung angezeigt wird.
-  - **Testfall 2:** Geben Sie einen existierenden Benutzernamen mit einem Rechtschreibfehler ein und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
-  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der eingegebene Benutzername vorhanden ist.
+    - **Testfall 1:** Geben Sie einen ungültigen Benutzernamen ein und überprüfen Sie, ob die entsprechende
+      Fehlermeldung angezeigt wird.
+    - **Testfall 2:** Geben Sie einen existierenden Benutzernamen mit einem Rechtschreibfehler ein und überprüfen Sie,
+      ob die Fehlermeldung angezeigt wird.
+    - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der eingegebene Benutzername vorhanden ist.
 
 - **Falsches Passwort:**
-  - **Testfall:** Geben Sie das falsche Passwort für einen vorhandenen Benutzer ein und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
-  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob das eingegebene Passwort mit dem Passwort des Benutzers übereinstimmt.
+    - **Testfall:** Geben Sie das falsche Passwort für einen vorhandenen Benutzer ein und überprüfen Sie, ob die
+      Fehlermeldung angezeigt wird.
+    - *Testtiefe:* Überprüfen Sie in der Datenbank, ob das eingegebene Passwort mit dem Passwort des Benutzers
+      übereinstimmt.
 
 ### Registrierung:
+
 - **E-Mail bereits vergeben:**
-  - **Testfall:** Versuchen Sie, sich mit einer bereits verwendeten E-Mail-Adresse zu registrieren, und überprüfen Sie, ob die entsprechende Fehlermeldung angezeigt wird.
-  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob die E-Mail-Adresse bereits vorhanden ist.
+    - **Testfall:** Versuchen Sie, sich mit einer bereits verwendeten E-Mail-Adresse zu registrieren, und überprüfen
+      Sie, ob die entsprechende Fehlermeldung angezeigt wird.
+    - *Testtiefe:* Überprüfen Sie in der Datenbank, ob die E-Mail-Adresse bereits vorhanden ist.
 
 - **Accountname vergeben:**
-  - **Testfall:** Wählen Sie einen Benutzernamen, der bereits von einem anderen Benutzer verwendet wird, und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
-  - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der Benutzername bereits vorhanden ist.
+    - **Testfall:** Wählen Sie einen Benutzernamen, der bereits von einem anderen Benutzer verwendet wird, und
+      überprüfen Sie, ob die Fehlermeldung angezeigt wird.
+    - *Testtiefe:* Überprüfen Sie in der Datenbank, ob der Benutzername bereits vorhanden ist.
 
 - **Passwort erfüllt nicht die Anforderungen:**
-  - **Testfall:** Verwenden Sie ein Passwort, das weniger als die erforderliche Mindestanzahl von Zeichen enthält, und überprüfen Sie, ob die Fehlermeldung angezeigt wird.
+    - **Testfall:** Verwenden Sie ein Passwort, das weniger als die erforderliche Mindestanzahl von Zeichen enthält, und
+      überprüfen Sie, ob die Fehlermeldung angezeigt wird.
 
 ### Spiele:
+
 - **Weiterspielen trotz aufgebrauchter Leben:**
-  - **Testfall:** Versuchen Sie, ein Spiel fortzusetzen, nachdem alle Leben aufgebraucht wurden, und überprüfen Sie, ob das System dies korrekt verhindert.
-  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
+    - **Testfall:** Versuchen Sie, ein Spiel fortzusetzen, nachdem alle Leben aufgebraucht wurden, und überprüfen Sie,
+      ob das System dies korrekt verhindert.
+    - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
 
 - **User-Interaktionen entgegengesetzt der Spielregeln:**
-  - **Testfall:** Versuchen Sie, eine Aktion auszuführen, die den Spielregeln widerspricht, und überprüfen Sie, ob das System dies erkennt und entsprechend handelt.
-  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
+    - **Testfall:** Versuchen Sie, eine Aktion auszuführen, die den Spielregeln widerspricht, und überprüfen Sie, ob das
+      System dies erkennt und entsprechend handelt.
+    - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden.
 
 - **Gegenspieler verlässt das Spiel:**
-  - **Testfall:** Simulieren Sie, dass ein Gegenspieler das Spiel verlässt, und überprüfen Sie, ob das Spiel korrekt beendet wird und ein entsprechender Hinweis angezeigt wird.
-  - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
+    - **Testfall:** Simulieren Sie, dass ein Gegenspieler das Spiel verlässt, und überprüfen Sie, ob das Spiel korrekt
+      beendet wird und ein entsprechender Hinweis angezeigt wird.
+    - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
 
 - **Verbindung wird unterbrochen:**
-  - **Testfall:** Unterbrechen Sie die Internetverbindung während eines laufenden Spiels und überprüfen Sie, ob das Spiel korrekt auf die Unterbrechung reagiert.
-  - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
+    - **Testfall:** Unterbrechen Sie die Internetverbindung während eines laufenden Spiels und überprüfen Sie, ob das
+      Spiel korrekt auf die Unterbrechung reagiert.
+    - *Testtiefe:* Überprüfen Sie im Backend, ob die Lobby aufgelöst wurde.
 
 - **Streak der Daily Challenge wird automatisch fortgeführt:**
-  - **Testfall:** Überprüfen Sie, ob die Streak der Daily Challenge korrekt fortgesetzt wird, wenn der Benutzer nach einem Unterbruch des Spiels wieder einsteigt.
-  - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden und in der Datenbank, ob die Streak richtig hochgezählt oder zurückgesetzt wurde.
+    - **Testfall:** Überprüfen Sie, ob die Streak der Daily Challenge korrekt fortgesetzt wird, wenn der Benutzer nach
+      einem Unterbruch des Spiels wieder einsteigt.
+    - *Testtiefe:* Überprüfen Sie im Frontend, ob Hinweise ausgegeben werden und in der Datenbank, ob die Streak richtig
+      hochgezählt oder zurückgesetzt wurde.
 
 # 4 Projektorganisation
 
@@ -577,45 +690,45 @@ Ist für die Repositories und das Deployment verantwortlich.
 
 ### Rollenzuordnung
 
-| Name   | Rolle               |
-|--------|---------------------|
-| Lewin  | Projektleiter       |
-| Tobias | DevOps-Engineer     |
-| Kevin  | Scrum-Master        |
+| Name   | Rolle           |
+|--------|-----------------|
+| Lewin  | Projektleiter   |
+| Tobias | DevOps-Engineer |
+| Kevin  | Scrum-Master    |
 
 ## 4.3 Grober Projektplan
 
 ### Meilensteine
 
 * KW 18 (29.04)
-  * Abgabe Pflichtenheft
+    * Abgabe Pflichtenheft
 
 * KW ()
-  * Repositories und Projekte für Entwicklung aufsetzen
+    * Repositories und Projekte für Entwicklung aufsetzen
 
 * KW ()
-  * Grundlegende Kommunikation
-    * Verbindung zwischen Server und Datenbank
-    * Verbindung zwischen Server und Web-Anwendung
+    * Grundlegende Kommunikation
+        * Verbindung zwischen Server und Datenbank
+        * Verbindung zwischen Server und Web-Anwendung
 
 * KW 23 (03.06)
-  * Mitte der Projektbearbeitungszeit
+    * Mitte der Projektbearbeitungszeit
 
 * KW ()
-  * Erreichung des MVP (Minimal Viable Product)
+    * Erreichung des MVP (Minimal Viable Product)
 
 * KW ()
-  * Einbindung weiteren APIs
-    * ChatGPT API
-    * Visual Studio API
+    * Einbindung weiteren APIs
+        * ChatGPT API
+        * Visual Studio API
 
 * KW 28 (08.07)
-  * Fertigstellung des Projektes
-  * Debugging
+    * Fertigstellung des Projektes
+    * Debugging
 
 * KW 29 (15.07)
-  * Ende der Projektlaufzeit
-  * Präsentation / Software-Demo
+    * Ende der Projektlaufzeit
+    * Präsentation / Software-Demo
 
 **weitere Meilensteine:** anwendungsspezifische Features
 

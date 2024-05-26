@@ -13,6 +13,7 @@
 | **12.05.2024** |                Website deployment                 | 1,5 Stunden |
 | **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden |
 | **21.05.2024** |                  Wochenüberblick                  |  2 Stunden  |
+| **26.05.2024** |          CI Pipeline via Github Actions           |  2 Stunden  |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -260,3 +261,11 @@ für weiters Infos --> Kanban Board
     - MVP: Login, registrieren, Anmelden, Daily Challenge, Buzzer 
     - mergen der features in den dvelopment branch
 2. Website hosting probleme angehen
+
+## Protokoll 26.05.2024 11:00 Uhr - 13:00 Uhr
+
+1. Zusammen tragen des aktuellen standes
+    - überarbeitete Daily Challenge
+    - Implementierung Buzzer Seite
+    - Vorstellen der automatischen Tests mit Vitest (--ui)
+2. Einbindung von einer CI Pipeline mit Github Actions
