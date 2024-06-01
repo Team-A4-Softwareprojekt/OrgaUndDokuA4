@@ -14,6 +14,7 @@
 | **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden |
 | **21.05.2024** |                  Wochenüberblick                  |  2 Stunden  |
 | **26.05.2024** |          CI Pipeline via Github Actions           |  2 Stunden  |
+| **29.05.2024** |                    Buzzer Game                    |  9 Stunden  |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -269,3 +270,10 @@ für weiters Infos --> Kanban Board
     - Implementierung Buzzer Seite
     - Vorstellen der automatischen Tests mit Vitest (--ui)
 2. Einbindung von einer CI Pipeline mit Github Actions
+
+
+## Protokoll 29.05.2024 10:00 Uhr - 15:30 Uhr & 17:00 Uhr - 20:30 Uhr
+
+1. Erste Implementierung der Buzzer Spielelogik
+2. kommunikation mittels Sockets --> entsprechende benötigte .on und .emit funktionen einbauen
+3. Durchgehendes Testing
