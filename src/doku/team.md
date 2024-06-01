@@ -1,20 +1,21 @@
 # Dokumentation: Team
 
-|     Datum      |                     Tätigkeit                     |    Dauer    |
-|:--------------:|:-------------------------------------------------:|:-----------:|
-| **17.04.2024** |             Sammeln von Projektideen              | 2,5 Stunden |
-| **18.04.2024** |           Spezifikation der Projektidee           | 3,5 Stunden |
-| **21.04.2024** | Ausarbeitung der Präsentation und des Fließtextes |   Stunden   |
-| **25.04.2024** |        Informationen aus Recherchen teilen        |  3 Stunden  |
-| **29.04.2024** |                Besprechung Mockups                | 1,5 Stunden |
-| **02.05.2024** |          Besprechung Aktivitätsdiagramme          | 1,5 Stunden |
-| **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |  2 Stunden  |
-| **08.05.2024** |            Nachbesprechung und Planung            | 1,5 Stunden |
-| **12.05.2024** |                Website deployment                 | 1,5 Stunden |
-| **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden |
-| **21.05.2024** |                  Wochenüberblick                  |  2 Stunden  |
-| **26.05.2024** |          CI Pipeline via Github Actions           |  2 Stunden  |
-| **29.05.2024** |                    Buzzer Game                    |  9 Stunden  |
+|     Datum      |                     Tätigkeit                     |    Dauer     |
+|:--------------:|:-------------------------------------------------:|:------------:|
+| **17.04.2024** |             Sammeln von Projektideen              | 2,5 Stunden  |
+| **18.04.2024** |           Spezifikation der Projektidee           | 3,5 Stunden  |
+| **21.04.2024** | Ausarbeitung der Präsentation und des Fließtextes |   Stunden    |
+| **25.04.2024** |        Informationen aus Recherchen teilen        |  3 Stunden   |
+| **29.04.2024** |                Besprechung Mockups                | 1,5 Stunden  |
+| **02.05.2024** |          Besprechung Aktivitätsdiagramme          | 1,5 Stunden  |
+| **04.05.2024** |        Abschluss vorläufiges Pflichtenheft        |  2 Stunden   |
+| **08.05.2024** |            Nachbesprechung und Planung            | 1,5 Stunden  |
+| **12.05.2024** |                Website deployment                 | 1,5 Stunden  |
+| **14.05.2024** |       Client-Server-Datenbank kommunikation       | 2,5 Stunden  |
+| **21.05.2024** |                  Wochenüberblick                  |  2 Stunden   |
+| **26.05.2024** |          CI Pipeline via Github Actions           |  2 Stunden   |
+| **29.05.2024** |                    Buzzer Game                    |  9 Stunden   |
+| **01.06.2024** |                    Buzzer Game                    | 3,75 Stunden |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -277,3 +278,10 @@ für weiters Infos --> Kanban Board
 1. Erste Implementierung der Buzzer Spielelogik
 2. kommunikation mittels Sockets --> entsprechende benötigte .on und .emit funktionen einbauen
 3. Durchgehendes Testing
+
+
+## Protokoll 01.06.2024 12:00 Uhr - 15:45 Uhr
+
+1. festlegen von dem weiteren Vorgehen und Ziel-Planung bis zum 10.06.2024
+2. weiteres Arbeiten an der Buzzer Spielelogik
+3. Verteilung von Aufgaben an alle Team Mitglieder
