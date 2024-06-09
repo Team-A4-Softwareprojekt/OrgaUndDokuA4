@@ -16,6 +16,7 @@
 | **26.05.2024** |          CI Pipeline via Github Actions           |  2 Stunden   |
 | **29.05.2024** |                    Buzzer Game                    |  9 Stunden   |
 | **01.06.2024** |                    Buzzer Game                    | 3,75 Stunden |
+| **09.06.2024** |            Besprechung aktueller Stand            | 1,5 Stunden  |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -285,3 +286,13 @@ für weiters Infos --> Kanban Board
 1. festlegen von dem weiteren Vorgehen und Ziel-Planung bis zum 10.06.2024
 2. weiteres Arbeiten an der Buzzer Spielelogik
 3. Verteilung von Aufgaben an alle Team Mitglieder
+
+
+## Protokoll 09.06.2024 12:00 Uhr - 13:30 Uhr
+
+1. Besprechung des Aktuellen standes
+    - Login --> Passwort Hashing
+    - Register --> Security Question
+    - Buzzer --> Countdown / Timer / Animationen (Win, Loose, Draw)
+    - Account --> Manage Friends
+2. festlegen der weiteren ToDo's im Kanban Board
