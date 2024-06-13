@@ -17,6 +17,7 @@
 | **29.05.2024** |                    Buzzer Game                    |  9 Stunden   |
 | **01.06.2024** |                    Buzzer Game                    | 3,75 Stunden |
 | **09.06.2024** |            Besprechung aktueller Stand            | 1,5 Stunden  |
+| **12.06.2024** |    Planung für den Milestone: Entwicklung-STOP    |  3 Stunden   |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -296,3 +297,13 @@ für weiters Infos --> Kanban Board
     - Buzzer --> Countdown / Timer / Animationen (Win, Loose, Draw)
     - Account --> Manage Friends
 2. festlegen der weiteren ToDo's im Kanban Board
+
+
+## Protokoll 12.06.2024 10:00 Uhr - 13:00 Uhr
+
+1. Besprechen des weiteren Vorgehens in anbetracht des gewünschten Entwicklung-STOPs am 24.06.2024
+    - Aufgaben definieren
+    - Aufgaben verteilen
+    - siehe Kanban Board
+2. Merging aller offenen Feature Branches in den Development Branch
+3. eröffnen neuer Feature Branches
