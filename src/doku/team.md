@@ -22,6 +22,7 @@
 | **19.06.2024** |          Besprechung und Branches Mergen          |  3 Stunden   |
 | **23.06.2024** |          Besprechung und Branches Mergen          |  3 Stunden   |
 | **26.06.2024** |              Feinschliffe und Fixes               |  4 Stunden   |
+| **28.06.2024** |           Design und ToDo's Besprechung           | 2,5 Stunden  |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -334,3 +335,10 @@ für weiters Infos --> Kanban Board
 ## Protokoll 26.06.2024 10:30 Uhr - 14:30 Uhr
 1. Manipulation Game Mode Feinschliff
 2. Website Design veränderungen
+
+
+## Protokoll 28.06.2024 15:00 Uhr - 16:30 Uhr und 18:00 Uhr bis 19:00 Uhr
+1. Besprechung des Design
+2. Finale ToDo's
+3. Erste Planung für Präsentation und Abgabe
+4. Aufgabenverteilung
