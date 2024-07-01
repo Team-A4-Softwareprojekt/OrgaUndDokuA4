@@ -10,10 +10,10 @@
     * Oliver Mann
     * Kevin Zuber
     * Lewin Wanzek
-* Link zum Source Code Repository (KOMMT)
-    * Datenbank:
-    * Server:
-    * Webanwendung:
+* Link zum Source Code Repository
+    * Organisation: https://github.com/Team-A4-Softwareprojekt/OrgaUndDokuA4
+    * Backend: https://github.com/Team-A4-Softwareprojekt/Senpai-Backend
+    * Frontend: https://github.com/Team-A4-Softwareprojekt/Senpai-Frontend
 * Inhaltsverzeichnis (KOMMT)
 
 # 1 Einführung
@@ -34,7 +34,8 @@ vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um d
   spielerisch zu erweitern.
 - **Daily Challenge:** Nimm täglich an Herausforderungen teil, um deine Fähigkeiten zu verbessern und eine
   kontinuierliche Lernroutine aufzubauen.
-- **Exercise:** Bearbeite komplexe Aufgaben in verschiedenen Kategorien und erhalte individuelles Feedback von
+- **Exercise *(Optional)*:** Bearbeite komplexe Aufgaben in verschiedenen Kategorien und erhalte individuelles Feedback
+  von
   erfahrenen Tutoren, um dein Verständnis zu vertiefen.
 - **Accountverwaltung:** Verwalte einfach dein Profil, speichere deine Fortschritte und behalte den Überblick über deine
   Lernreise.
@@ -48,7 +49,7 @@ vermitteln und gleichzeitig fortgeschrittene Lernmöglichkeiten anzubieten, um d
 
 - Anfänger, die in die Welt des Programmierens eintauchen möchten
 - Fortgeschrittene, die ihre Kenntnisse vertiefen und festigen möchten
-- Tutoren, die ihr Wissen weitergeben und von der Plattform profitieren möchten
+- *(Optional)* Tutoren, die ihr Wissen weitergeben und von der Plattform profitieren möchten
 
 **Warum Senpai:**
 Mit einer Kombination aus spielerischen Elementen, täglichen Herausforderungen und individuellem Feedback bietet Senpai
@@ -90,7 +91,7 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
 
 * Lernender:
     * Nutzt die unterschiedlichen Spiel-Modi (konstenlos oder mit dem Abonnemenet-Modell)
-* Tutor:
+* *(Optional)* Tutor:
     * Veröffentlicht Inhalte
     * bewertet "Excercise"-Abgaben
 
@@ -111,26 +112,16 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
     * Spielstände
     * andere spielbezogene Daten
 
-**VsCode (API)**
-
-* Stellt eine Schnittstelle bereit, die es der Webanwendung ermöglicht, Code zu kompilieren
-    * Bereitstellung von Methoden und Funktionen zum Einreichen von Code
-
 **ACE Code Editor (API)**
 
 * Stellt eine Schnittstelle bereit, die es ermöglicht den Code Editor in die Webanwendung zu implementierung
     * entspricht den Funktionen und der Leistung nativer Editoren
 
-**ChatGPT (API)**
+***(Optional)* ChatGPT (API)**
 
 * Stellt eine Schnittstelle bereit, über die die Einreichungen an die KI gesendet werden können, um sie zu bewerten
     * Bereitstellung von Methoden und Funktionen zum Senden von Texteingaben und zum Empfangen von
       Bewertungsergebnissen.
-
-
-* Akteure sowie andere Begriffe der implementierten Fachdomäne definieren
-* Begriffe konsistent in der Spezifikation verwenden
-* Begriffe im Glossar am Ende des Dokuments darstellen
 
 ## 2.3 Nicht-funktionale Anforderungen
 
@@ -302,7 +293,7 @@ wenn die Ladezeiten der Aufgaben minimal sind.
 **Warum:** Um den Code besser lesen und verstehen zu können.
 **Wann akzeptiert:** Wenn der Code auf der Website farblich hervorgehoben wird und leicht lesbar ist.
 
-#### Benutzerstory 6: Schnelle Rückmeldung für Übungen
+#### *(Optional)* Benutzerstory 6: Schnelle Rückmeldung für Übungen
 
 **Wer:** Als Nutzer von CodeSenpai, der Übungen abschließt  
 **Was:** Möchte ich möglichst schnell Rückmeldung erhalten (Via KI oder Tutor), wenn ich eine Übung abgeschlossen
@@ -312,7 +303,7 @@ fortzufahren.
 **Wann akzeptiert:** Wenn ich unmittelbar nach dem Einreichen meiner Lösung eine Rückmeldung erhalte und weiß, ob meine
 Antwort korrekt ist oder nicht.
 
-#### Benutzerstory 7: Historie einsehen
+#### *(Optional)* Benutzerstory 7: Historie einsehen
 
 **Wer:** Als Nutzer von CodeSenpai  
 **Was:** Möchte ich sehen können, welche Aufgaben ich bereits bearbeitet habe.  
@@ -320,7 +311,7 @@ Antwort korrekt ist oder nicht.
 **Wann akzeptiert:** Wenn ich auf meiner Profilseite oder in einer separaten Historie-Seite eine Liste meiner
 bearbeiteten Aufgaben einsehen kann.
 
-#### Benutzerstory 8: Aufgaben aus Übersicht auswählen
+#### *(Optional)* Benutzerstory 8: Aufgaben aus Übersicht auswählen
 
 **Wer:** Als Nutzer von CodeSenpai  
 **Was:** Möchte ich die Möglichkeit haben, Aufgaben aus einer Übersicht auszuwählen.  
@@ -328,7 +319,7 @@ bearbeiteten Aufgaben einsehen kann.
 **Wann akzeptiert:** Wenn ich auf einer Übersichtsseite oder in einer Kategorieauswahl alle verfügbaren Aufgaben sehen
 und auswählen kann.
 
-#### Benutzerstory 9: Über korrigierte Übungen benachrichtigt werden
+#### *(Optional)* Benutzerstory 9: Über korrigierte Übungen benachrichtigt werden
 
 **Wer:** Als Nutzer von CodeSenpai, der Übungen einreicht  
 **Was:** Möchte ich benachrichtigt werden, wenn meine Übungen korrigiert wurden.  
@@ -355,7 +346,7 @@ einem Tutor korrigiert wurde.
 
 **Präsentationsschicht:**
 
-- Web-Anwendung (ggf. PWA) als grafische Interaktionsschnittstelle
+- Web-Anwendung (*optional* PWA) als grafische Interaktionsschnittstelle
 - Es wird die Open-Source JavaScript Bibliothek React.js verwendet, um die Benutzeroberfläche und
   dessen Interaktion zu implementieren
 - kommuniziert über Web-sockets mit der Logik-Schicht
@@ -371,7 +362,7 @@ einem Tutor korrigiert wurde.
 
 **Datenzugriffsschicht:**
 
-- der Oracle SQL Developer wird verwendet, um die Datenbank aufzusetzen
+- DBeaver wird zur Verwaltung der Datenbank verwendet, die Datenbank wird über SQL Skripte erstellt
 - nur der Server kommuniziert mit der Datenbank
 
 ### 3.2.1 Technologieauswahl
@@ -380,32 +371,51 @@ einem Tutor korrigiert wurde.
 
 * React.js (JavaScript und XML (JSX))
 * Github-Pages
-* Socket.io (Kommunikation zum Server)
+* Socket.io (Kommunikation zum Server, Spielkommunikation)
+* Rest-API (Kommunikation zum Server, Laden von userbezogenen Daten)
 
 **Server:**
 
 * Node.js (JavaScript),
 * CI/CD via Render
 * Socket.io (Kommunikation zum Client)
+* Rest-API (Kommunikation zum Client, Bereitstellung userbezogener Daten aus der Datenbank)
 
 **Datenbank:**
 
-* Oracle SQL Developer
+* PostgreSQL Datenbank, gehostet auf Render
+* DBeaver für die Verwaltung der Datenbank
 
-## 3.3 Schnittstellen
+## 3.3 Schnittstellen-Technologien
 
 **WebSocket-API (socket.io):**
 
-Damit der Client und Server kommunizieren können werden Web-sockets verwendet.
-Socket.io ist hier eine Performante und Zuverlässige lösung.
-Außerdem ist Socket.io gut dokumentiert und leicht verständlich.
+Damit Client und Server in Echtzeit kommunizieren können, werden WebSockets eingesetzt. Diese Echtzeitkommunikation ist
+entscheidend, um eine faire und konsistente Spielerfahrung sicherzustellen. Socket.io stellt eine performante und
+zuverlässige Lösung dar, die zudem gut dokumentiert und leicht verständlich ist. Sie ermöglicht es Entwicklern,
+effizient robuste Echtzeit-Anwendungen zu entwickeln, sei es für Multiplayer-Spiele, Live-Dashboards oder andere
+Anwendungen, die schnelle und zuverlässige Echtzeit-Datenübertragung erfordern.
 
 https://socket.io/
 
-**ChatGPT API:**
+**Rest-API (Representational State Transfer):**
 
-Die API von ChatGPT ermöglicht das Einbinden der KI in eigene Softwareprojekte. In diesem Projekt soll die KI eventuell
-genutzt werden, um ggf. automatisierte Korrekturen der Exercises zu bieten.
+Um Daten aus der Datenbank abzurufen, wird eine REST API verwendet. Diese API ermöglicht es, effizient und zuverlässig
+auf die benötigten Daten zuzugreifen, ohne dass eine Echtzeitkommunikation erforderlich ist. RESTful APIs sind weit
+verbreitet und gut dokumentiert, was die Integration und Wartung erleichtert. Sie bieten eine standardisierte Methode,
+um Daten über HTTP zu übertragen, und eignen sich hervorragend für Anwendungen, bei denen Daten abgerufen oder
+aktualisiert werden müssen, aber keine sofortige Rückmeldung in Echtzeit erforderlich ist.
+
+https://socket.io/
+
+***(Optional)* GPT API:**
+
+Die API von ChatGPT ermöglicht die Integration der KI in eigene Softwareprojekte und bietet somit vielfältige
+Einsatzmöglichkeiten. In diesem Projekt soll die KI möglicherweise genutzt werden, um automatisierte Korrekturen der
+Übungen zu ermöglichen. Diese Funktion könnte Lehrern und Ausbildern helfen, Zeit zu sparen und gleichzeitig den
+Lernenden sofortiges Feedback zu ihren Aufgaben zu geben. Durch den Einsatz der ChatGPT-API können Fehler schneller
+erkannt und korrigiert werden, wodurch die Effizienz des Lernprozesses gesteigert wird. Zudem lässt sich die API
+flexibel an die spezifischen Anforderungen des Projekts anpassen, um optimale Ergebnisse zu erzielen.
 
 https://openai.com/product
 
@@ -413,81 +423,287 @@ https://chatgpt-info.de/chatgpt-in-website-einbinden-schritt-fuer-schritt-anleit
 
 https://www.ionos.de/digitalguide/websites/web-entwicklung/chatgpt-api/
 
-**Visual Studio API:**
-
-Die Aufgaben unserer Lernplattform sollen Code-highlighting und IDE ähnliche funktionen wie z.B. Compilierung bieten.
-Auf GitHub kann der Code jedes repository Online im Browser in VSCode geöffnet werden, indem die URL von github.com zu
-github.dev geändert wird.
-
-https://www.youtube.com/watch?v=zRkHk2WZwjc
-
-https://docs.github.com/en/codespaces/the-githubdev-web-based-editor
-
-Eine solche Funktion wäre für unsere Lernplattform im CodeSenpai bereich eine Bereicherung.
-
 **ACE Code Editor API:**
 
-ACE ist ein Open-Source "High Performance Code Editor for the Web".
-Ace kann einfach in jede Website oder JavaScript Anwendung eingebaut werden.
+ACE ist ein Open-Source "High Performance Code Editor for the Web", der sich durch seine Leistungsfähigkeit und
+Flexibilität auszeichnet. Der Editor kann problemlos in jede Website oder JavaScript-Anwendung integriert werden,
+wodurch er vielseitig einsetzbar ist.
 
+Der Open-Source-Code von ACE ist auf GitHub verfügbar:
 https://ace.c9.io/
 
-Der Open-Source Code ist auf Github verfügbar:
-
+Die offizielle Website bietet ausführliche Anleitungen und dokumentiert die einfache Integration des Editors:
 https://github.com/ajaxorg/ace
 
-Ace bietet eine hervorragende Seite mit ausführlichen Anleitungen und wird als "einfache" Lösung dargestellt.
+In unseren Spielmodi (Manipulation und *(optional)* Limitation) verwenden wir den ACE-Code-Editor, um Client-seitiges Kompilieren zu ermöglichen und so ein
+interaktives "Coding-Erlebnis" auf unserer Lernplattform zu schaffen. Diese Integration bietet den Nutzern die
+Möglichkeit, direkt im Browser zu programmieren, was das Lernen von Programmiersprachen und das Verständnis von
+Codekonzepten erleichtert. Durch die Nutzung des ACE-Editors können wir eine nahtlose und leistungsstarke
+Coding-Umgebung bieten, die sowohl Anfänger als auch fortgeschrittene Benutzer anspricht.
+
+ACE unterstützt verschiedene Programmiersprachen, bietet Syntax-Highlighting, Autovervollständigung und eine Vielzahl
+von Anpassungsoptionen, die es ermöglichen, den Editor an die spezifischen Bedürfnisse unserer Nutzer anzupassen. Mit
+seiner benutzerfreundlichen Oberfläche und der robusten Funktionalität trägt der ACE-Code-Editor maßgeblich dazu bei,
+die Interaktivität und Effektivität unserer Lernplattform zu steigern.
 
 **Datenbank:**
 
-Um auf die Oracle Datenbank zuzugreifen werden die Offiziellen Oracle Treiber verwendet.
-In kombination mit NOde.js wird hierfür im Projektverzeichnis das "oracledb"-Modul installiert und anschließend die
-Oracle-Datenbank verbindung im Code hinterlegt.
+Um auf die PostgreSQL-Datenbank zuzugreifen, können IDE-bezogene Erweiterungen (Extensions) verwendet werden. Diese
+Tools erleichtern die Verwaltung und Interaktion mit der Datenbank direkt innerhalb der Entwicklungsumgebung. Dazu wird
+die Datenbankverbindung im Code hinterlegt, was eine nahtlose Integration ermöglicht.
 
-**Formulierung der Spielmodi-APIs:**
+Die Verwendung solcher Erweiterungen bietet zahlreiche Vorteile: Sie ermöglichen eine komfortable Verwaltung von
+Datenbank-Schemata, die Durchführung von SQL-Abfragen und die Überwachung der Datenbankleistung. Zudem unterstützen
+viele dieser Tools die Autovervollständigung von SQL-Befehlen und bieten Syntax-Highlighting, was die Produktivität und
+Genauigkeit beim Arbeiten mit der Datenbank erhöht. Durch die Integration der Datenbankverbindung in den Code wird
+sichergestellt, dass die Anwendung jederzeit effizient und sicher auf die benötigten Daten zugreifen kann.
 
-Socket:
-Buzzer Queue → erstellt einen socket.room() platziert die socket.id des spieler dadrin und wartet auf einen 2ten,
-sendet ein TRUE an Buzzer_GameFound (CLIENT) wenn ein zweiter Socket den Room betritt/ hinzugefügt wird
+## 3.4 Ausformulierung der Schnittstellen
 
-AWAIT_QUESTION → wenn beide Spieler in der Lobby die Funktion aufgerufen haben wir eine SQL Anfrage an die Datenbank
-gesendet, wodurch eine Frage per zufall ausgewählt wird, der Text der Frage wird an beide Clients übergeben
-SHOW_QUESTION(CLIENT), ein Timer zählt herunter und schickt regelmäßig die aktuelle Zeit an die 2 Clients. Es wird
-gezählt wie oft AWAIT QUESTION von der Lobby aufgerufen wird, wenn der Counter == 3 dann wird END_GAME (CLIENT)
-aufgerufen
+### Laden userbezogener Daten via Rest-API:
 
-PLAYER_BUZZERED → blockiert den gegnerischen Buzzer indem DISABLE_BUZZER aufgerufen wird für den Spieler der NICHT
-gebuzzert hat, für den Spieler der gebuzzert hat, wird die Funktion PICK_ANSWER (CLIENT) aufgerufen
+* * *
 
-COMPARE_ANSWER → fragt bei SQL die richtige Anwort der ausgewählten Frage an und vergleicht die Antwort vom Client. Die
-Methode merkt sich, welcher Client bereits geantwortet hat. Wenn beide bereits die Möglichkeit hatten zu antworten
-bekommt keiner einen Punkt.
-Wenn die Antwort richtig war, dann sende die richtige Antwort an beide Clients und füge einen Punkt dem Spieler hinzu
-der richtig geantwortet hat END_ROUND (CLIENT)
-→ Wenn die Antwort falsch war, dann ENABLE_BUZZER für den Gegenspieler und rufe PICK_ANSWER auf. 
-→ Wenn die Antwort richtig ist, dann sende die richtige Antwort an beide Clients und füge einen Punkt dem Spieler hinzu der richtig geantwortet hat 		END_ROUND (CLIENT)
-→ Wenn beide Spieler (falsch) geantwortet haben rufe END_ROUND auf 
+#### 1. Benutzerregistrierung
 
-Client:
-Button "Buzzer" → ruft Socket Buzzer_Queue (SERVER) auf, zeigt Wartescreen bis an Buzzer_GameFound (CLIENT) ein TRUE
-gesendet wird
+**Endpunkt:** `/register`
 
-Wurde ein TRUE empfangen, dann wird der Spielescreen geladen und ein AWAIT_QUESTION (SOCKET) aufgerufen
+**Methode:** `POST`
 
-Wenn SHOW_QUESTION aufgerufen wird, wird der Text in den Spielescreen geladen, hier kann der Spieler Buzzern. Wenn ein
-Spieler gebuzzert hat, wir die Funktion PLAYER_BUZZERED aufgerufen
+**Beschreibung:** Diese Funktion registriert einen neuen Benutzer. Es wird überprüft, ob der Benutzername oder die E-Mail bereits existieren. Wenn nicht, wird ein neuer Benutzer mit gehashtem Passwort in die Datenbank eingefügt.
 
-DISABLE_BUZZER → graut den Buzzer Button aus (keine Funktionalität)
+**Anfrage-Parameter:**
+- `username` (String, erforderlich)
+- `email` (String, erforderlich)
+- `password` (String, erforderlich)
+- `securityQuestion` (String, erforderlich)
+- `securityAnswer` (String, erforderlich)
 
-ENABLE_BUZZER → aktiviert die Funktionalität des Buzzers
+**Antworten:**
+- `201 Created` - Registrierung erfolgreich
+- `409 Conflict` - Benutzername oder E-Mail existieren bereits
+- `500 Internal Server Error` - Datenbankfehler
 
-PICK_ANSWER → Ein Timer von 3 Sek startet, in der Zeit kann die Antwort angeklickt werden, wenn eine Antwort
-angegklickt wird oder die Zeit == 0, dann wird COMPARE_ANSWER (SERVER) aufgerufen
+* * *
 
-END_ROUND → zeige die richtige Lösung an, danach ein weiteres Fenster mit dem Punktestand
+#### 2. Benutzeranmeldung
 
-END_GAME → zeige einen Endscreen mit dem Gewinner (markiert) und dem Punktestand an, lösche die Lobby und disconnecte
-die Sockets
+**Endpunkt:** `/login`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion ermöglicht die Anmeldung eines Benutzers durch Überprüfung von Benutzernamen und Passwort.
+
+**Anfrage-Parameter:**
+- `username` (String, erforderlich)
+- `password` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Anmeldung erfolgreich
+- `401 Unauthorized` - Ungültige Anmeldedaten
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 3. Sicherheitsfragen abrufen
+
+**Endpunkt:** `/security-questions`
+
+**Methode:** `GET`
+
+**Beschreibung:** Diese Funktion ruft alle verfügbaren Sicherheitsfragen aus der Datenbank ab.
+
+**Antworten:**
+- `200 OK` - Erfolgreiche Abfrage
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 4. Verbindungstest
+
+**Endpunkt:** `/connection_test`
+
+**Methode:** `GET`
+
+**Beschreibung:** Diese Funktion testet die Verbindung durch Überprüfung eines Testdatums.
+
+**Anfrage-Parameter:**
+- `data` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Verbindung erfolgreich (`true` oder `false`)
+
+* * *
+
+#### 5. Kontodaten laden
+
+**Endpunkt:** `/loadAccountData`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion lädt die Kontodaten eines Benutzers basierend auf dem Benutzernamen.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Kontodaten erfolgreich geladen
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 6. E-Mail-Adresse ändern
+
+**Endpunkt:** `/changeEmail`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion ändert die E-Mail-Adresse eines Benutzers.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+- `newEmail` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - E-Mail erfolgreich geändert
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 7. Passwort ändern
+
+**Endpunkt:** `/changePassword`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion ändert das Passwort eines Benutzers.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+- `newPassword` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Passwort erfolgreich geändert
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 8. Abonnement starten
+
+**Endpunkt:** `/startSubscription`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion startet ein Abonnement für einen Benutzer und reduziert das Guthaben um 5 Credits.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+- `subEndDate` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Abonnement erfolgreich gestartet
+- `404 Not Found` - Nicht genügend Guthaben
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 9. Konto löschen
+
+**Endpunkt:** `/deleteAccount`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion löscht das Konto eines Benutzers.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Konto erfolgreich gelöscht
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 10. Passwort vergessen
+
+**Endpunkt:** `/forgotPassword`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion setzt das Passwort eines Benutzers zurück, wenn die Sicherheitsfrage korrekt beantwortet wird.
+
+**Anfrage-Parameter:**
+- `email` (String, erforderlich)
+- `password` (String, erforderlich)
+- `securityQuestion` (String, erforderlich)
+- `securityAnswer` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Passwort erfolgreich zurückgesetzt
+- `404 Not Found` - Ungültige Angaben
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 11. Abonnement kündigen
+
+**Endpunkt:** `/cancelSubscription`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion kündigt das Abonnement eines Benutzers.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Abonnement erfolgreich gekündigt
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 12. Guthaben kaufen
+
+**Endpunkt:** `/buyCurrency`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion erhöht das Guthaben eines Benutzers.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+- `amount` (Integer, erforderlich)
+
+**Antworten:**
+- `200 OK` - Guthaben erfolgreich erhöht
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
+#### 13. Tagesstreak abschließen
+
+**Endpunkt:** `/streakForToday`
+
+**Methode:** `POST`
+
+**Beschreibung:** Diese Funktion markiert den täglichen Streak eines Benutzers als abgeschlossen.
+
+**Anfrage-Parameter:**
+- `playerName` (String, erforderlich)
+
+**Antworten:**
+- `200 OK` - Tagesstreak erfolgreich abgeschlossen
+- `404 Not Found` - Benutzer nicht gefunden
+- `500 Internal Server Error` - Datenbankfehler
+
+* * *
+
 
 ## 3.3 Datenmodell
 
@@ -631,17 +847,17 @@ Auflistung möglicher Fehler / Exceptions
     * socket.io
     * node.js
     * react.js
-    * MySql / MongoDB / PostgreSQL
+    * PostgreSQL
     * JS
     * JSX
     * GithubPages
     * render
+    * DBeaver
 
 * Aufteilung in Repositories gemäß Software- und Systemarchitektur und Softwarebausteinen
     * Organisations Repo
-    * Server Repo
-    * Frontend/Backend Repo
-    * Datenbank
+    * Backend (Server + Datenbank) Repo
+    * Frontend Repo
 
 * Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme,
   Entwicklungsumgebung)
