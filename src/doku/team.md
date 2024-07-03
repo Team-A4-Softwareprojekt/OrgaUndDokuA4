@@ -23,6 +23,8 @@
 | **23.06.2024** |          Besprechung und Branches Mergen          |  3 Stunden   |
 | **26.06.2024** |              Feinschliffe und Fixes               |  4 Stunden   |
 | **28.06.2024** |           Design und ToDo's Besprechung           | 2,5 Stunden  |
+| **30.06.2024** |     Design, Mergen und Präsentations Planung      | 1,5 Stunden  |
+| **03.07.2024** |        Bugfixing und Präsentations Planung        |  3 Stunden   |
 
 
 ## Sammelprotokoll: 17.04.2024 / 18.04.2024 / 21.04.2024
@@ -339,6 +341,19 @@ für weiters Infos --> Kanban Board
 
 ## Protokoll 28.06.2024 15:00 Uhr - 16:30 Uhr und 18:00 Uhr bis 19:00 Uhr
 1. Besprechung des Design
-2. Finale ToDo's
-3. Erste Planung für Präsentation und Abgabe
-4. Aufgabenverteilung
+2. Mergen aller Branches in den Development Branch
+3. Finale ToDo's
+4. Erste Planung für Präsentation und Abgabe
+5. Aufgabenverteilung
+
+
+## Protokoll 30.06.2024 14:00 Uhr - 15.30 Uhr 
+1. Besprechung des Design
+2. Planung für Präsentation
+3. Kanban Board 
+4. Mergen aller Branches in den Development Branch
+
+
+## Protokoll 03.06.2024 10:00 Uhr - 13:00 Uhr
+1. Bugfixing für den Manipulation GameMode
+2. Planung und erstes Layout der Präsentation
