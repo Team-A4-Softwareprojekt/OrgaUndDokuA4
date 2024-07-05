@@ -60,16 +60,16 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
 
 ## 2.1 Stakeholder
 
-| Funktion / Relevanz | Name             | Kontakt / Verfügbarkeit                 | Wissen                             | Interessen / Ziele                      |
-|---------------------|------------------|-----------------------------------------|------------------------------------|-----------------------------------------|
-| Product-Owner       | Projektteam      | s. individuelle Mails der Product-Owner |                                    |                                         |
-| Serveradministrator | Lewin Wanzek     | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript | Webentwicklung / stabile Serverumgebung |
-| Datenbank           | Leonie Terlutter | Hochschul-Email                         |                                    |                                         |
-| Webanwendung        | Oliver Mann      | Hochschul-Email                         |                                    |                                         |
-| Logik               | Tobias Wegner    | Hochschul-Email                         |                                    |                                         |
-| Logik               | Kevin Zuber      | Hochschul-Email                         |                                    |                                         |
-| User (extern)       | /                | erreichbar über angelegte Accounts      |                                    |                                         |
-| Tutor (extern)      | /                | erreichbar über angelegte Accounts      |                                    |                                         |
+| Funktion / Relevanz | Name             | Kontakt / Verfügbarkeit                 | Wissen                                                 | Interessen / Ziele                                                                        |
+|---------------------|------------------|-----------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| Product-Owner       | Projektteam      | s. individuelle Mails der Product-Owner |                                                        |                                                                                           |
+| Serveradministrator | Lewin Wanzek     | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript                     | Webentwicklung / stabile Serverumgebung                                                   |
+| Datenbank           | Leonie Terlutter | Hochschul-Email                         |                                                        |                                                                                           |
+| Webanwendung        | Oliver Mann      | Hochschul-Email                         |                                                        |                                                                                           |
+| Webanwendung        | Tobias Wegner    | Hochschul-Email                         | Grundlegende Kenntnisse GitHub verwaltung / JavaScript | Vertiefung Repository/Organisations verwaltung, Gute Planung zur Vorbeugung von Problemen |
+| Webanwendung        | Kevin Zuber      | Hochschul-Email                         |                                                        |                                                                                           |
+| User (extern)       | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
+| Tutor (extern)      | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
 
 ## 2.2 Funktionale Anforderungen
 
@@ -329,6 +329,8 @@ einem Tutor korrigiert wurde.
 
 ## 2.6 Design Richtlinien
 
+Das Design wird passend zum Namen "Senpai" an die asiatische Kultur angelehnt sein.
+
 * Hintergrundfarbe
 * Schriftart
 * Format
@@ -338,7 +340,7 @@ einem Tutor korrigiert wurde.
 
 ## 3.1 Systemübersicht
 
-![](../Artefacts/Systemarchitektur.PNG)
+![](../Artefacts/Systemarchitektur_V2.png)
 
 ## 3.2 Softwarearchitektur
 
@@ -370,16 +372,18 @@ einem Tutor korrigiert wurde.
 **Client:**
 
 * React.js (JavaScript und XML (JSX))
-* Github-Pages
+* Render
 * Socket.io (Kommunikation zum Server, Spielkommunikation)
 * Rest-API (Kommunikation zum Server, Laden von userbezogenen Daten)
+* CI/CD durch GitHub (Actions/Workflows) und Render 
 
 **Server:**
 
 * Node.js (JavaScript),
-* CI/CD via Render
+* Render
 * Socket.io (Kommunikation zum Client)
 * Rest-API (Kommunikation zum Client, Bereitstellung userbezogener Daten aus der Datenbank)
+* CI/CD durch GitHub (Actions/Workflows) und Render
 
 **Datenbank:**
 
@@ -1139,21 +1143,16 @@ Bei einer falschen Antwort:
 **Parameter:** `true`
 
 
-
-
-
-
-
 ## 3.3 Datenmodell
 
 **Vorläufiges ER-Diagramm (V1)**
-![](../Artefacts/ERD/ER-Diagramm_v2.png)
+![](../Artefacts/ERD/ER-Diagramm_v3.png)
 
 * Konzeptionelles Analyseklassendiagramm (logische Darstellung der Konzepte der Anwendungsdomäne)
 * Modellierung des physikalischen Datenmodells
 * RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
-## 3.4 Abläufe
+## 3.4 Abläufe und Entwürfe
 
 #### Login
 
@@ -1193,9 +1192,8 @@ Bei einer falschen Antwort:
 
 ![](../Artefacts/Aktivitätsdiagramme_V1/Limitation.png)
 
-## 3.5 Entwurf (folgt)
 
-## 3.6 Fehlerbehandlung
+## 3.5 Fehlerbehandlung
 
 Auflistung möglicher Fehler / Exceptions
 
@@ -1215,9 +1213,19 @@ Auflistung möglicher Fehler / Exceptions
     * Verbindung wird unterbrochen
     * Streak der Daily Challenge wird automatisch fortgeführt
 
-* Fehlercodes: (folgt)
+* Account:
+    * Fehlerhafte Daten 
+    * Unterschiedliche Daten (Client und Datenbank)
+    * Daten aktualisierung fehlerhaft
 
-## 3.7 Validierung
+
+#### Fehlercodes: 
+- `401 Unauthorized` z.B. bei Ungültigen Anmeldedaten
+- `404 Not Found` z.B. wenn Benutzer/Spieler nicht gefunden
+- `500 Internal Server Error` z.B. Datenbankfehler oder Passwort hashing fehler
+
+
+## 3.6 Validierung
 
 ### Einloggen:
 
@@ -1290,13 +1298,14 @@ Auflistung möglicher Fehler / Exceptions
     * JS
     * JSX
     * GithubPages
+    * GitHub Action / Workflows
     * render
     * DBeaver
 
 * Aufteilung in Repositories gemäß Software- und Systemarchitektur und Softwarebausteinen
-    * Organisations Repo
-    * Backend (Server + Datenbank) Repo
-    * Frontend Repo
+    * Organisations Repository
+    * Backend (Server + Datenbank) Repository
+    * Frontend Repository
 
 * Einschränkungen, Betriebsbedingungen und Faktoren, die die Entwicklung beeinflussen (Betriebssysteme,
   Entwicklungsumgebung)
@@ -1319,11 +1328,10 @@ Auflistung möglicher Fehler / Exceptions
 
 ### Rollen
 
-Überlegen Sie, ob es sinnvoll ist, wenn Sie die Rollen für
-Product-Owner und Scrum-Master vergeben, wobei Sie bedenken
-sollten, ob diese Rollen über den gesamten Projektzeitraum
-aktiv sein werden. Neben diesen Rollen können folgende Rollen
-sinnvoll sein:
+#### Product-Owner
+
+Der Product Owner ist dafür verantwortlich, eine klare Vision des Produkts zu definieren und sicherzustellen, dass alle
+Teammitglieder diese Vision verstehen. Er entwickelt die Strategie, um die Produktziele zu erreichen.
 
 #### Softwarearchitekt
 
@@ -1331,8 +1339,8 @@ Entwirft den Aufbau von Softwaresystemen und trifft Entscheidungen über das Zus
 
 #### Frontend-Entwickler
 
-Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer
-Anwendung.
+Entwickelt graphische oder andere Benutzerschnittstellen, insbesondere das Layout einer Anwendung. Implementiert die 
+Grundfunktionalität für Spiele-Logiken.
 
 #### Backend-Entwickler
 
@@ -1341,15 +1349,71 @@ integriert und für die Anwendung bereitgestellt.
 
 #### DevOps-Engineer
 
-Ist für die Repositories und das Deployment verantwortlich.
+Ist für die Repositories und das Deployment inklusive Tests verantwortlich.
 
 ### Rollenzuordnung
 
-| Name   | Rolle           |
-|--------|-----------------|
-| Lewin  | Projektleiter   |
-| Tobias | DevOps-Engineer |
-| Kevin  | Scrum-Master    |
+| Name   | Rolle                                             |
+|--------|---------------------------------------------------|
+| Lewin  | Softwarearchitekt, Product-Owner, Projektleiter   |
+| Tobias | Softwarearchitekt, Product-Owner, DevOps-Engineer |
+| Kevin  | Softwarearchitekt, Product-Owner, Scrum-Master    |
+| Leonie | Softwarearchitekt, Product-Owner,                 |
+| Oliver | Softwarearchitekt, Product-Owner,                 |
+
+
+### Durchgeführte Aufgaben während des Projekts:
+
+Die Softwarearchitektur wurde gemeinsam und in Einverständnis von allen Mitgliedern geplant.
+
+Die Aufgaben wurden immer anhand des Zuständigkeitsbereiches und der Rollen verteilt. Bei Bedarf wurde aber auch nach 
+Absprache Zuständigkeitsbereich-übergreifend gearbeitet.
+
+Das Kanban Board wurde von allen Gruppen Mitgliedern verwendet verwendet.
+
+#### Lewin Wanzek:
+- leitung der Meetings
+  - Ablauf
+  - Aufgabenverteilung
+- Kommunikation Server-Datenbank
+- Kommunikation Server-Client (REST und Socket)
+- Server Deployment
+- Mergen von Branches
+- Spiele Logik und Debugging
+
+#### Tobias Wegner:
+- CI/CD:
+  - Frontend Deployment
+  - Automatisierte Tests
+- Repository:
+  - Erstellen von Organisation und Repositorys
+  - Kanban Board "pflegen"
+  - Mergen von Branches
+  - Überwachung von Branching Strategie
+- Spiele Logik und Debugging
+
+#### Kevin Zuber:
+- Design-Ideen ins Frontend eingebunden
+- Seiten-Layout bzw. Gerüst/Templates für Spiele und Features vorbereitet
+  -  Buttons / PopUps / Textfelder etc.
+- Grundfunktionalität und Design des Buzzer-Spielmodus
+- Funktionalität und Design der meisten PopUps, Herzen und Account-Seite
+- Spielregeln-Übersicht (Slideshow)
+
+#### Oliver Mann:
+- React Anfänge des Frontends aufgesetzt (Technologien ausgesucht und implementiert)
+- Design-Ideen ins Frontend eingebunden
+- Umstellung auf Vite
+- Grundfunktionen und Teile der Logik der Daily-Challenge
+- Grundfunktionen und Teile der Logik des Manipulation-Spielmodus
+
+#### Leonie Terlutter:
+- Vergleich und Auswahl von DB Services
+- Datenbank aufsetzen
+- Tabellen erstellen / Anpassung der DB nach neuen Anforderungen
+- Daten vorbereiten und einpflegen
+- Automatisiertes Script für wiederholende Tätigkeiten
+- Recherche zu scheduling tools zB pgAgent
 
 ## 4.3 Grober Projektplan
 
@@ -1366,22 +1430,17 @@ Ist für die Repositories und das Deployment verantwortlich.
         * Verbindung zwischen Server und Datenbank
         * Verbindung zwischen Server und Web-Anwendung
 
-* KW 23 (03.06)
-    * Mitte der Projektbearbeitungszeit
-
-* KW ()
+* KW (27.05.2024)
     * Erreichung des MVP (Minimal Viable Product)
 
-* KW ()
-    * Einbindung weiteren APIs
-        * ChatGPT API
-        * Visual Studio API
+* KW 23 (03.06.2024)
+  * Mitte der Projektbearbeitungszeit
 
-* KW 28 (08.07)
-    * Fertigstellung des Projektes
+* KW 26 (24.06.2024)
+    * Fertigstellung des Projektes (Feature Entwicklungs-Stop)
     * Debugging
 
-* KW 29 (15.07)
+* KW 28 (08.07.2024)
     * Ende der Projektlaufzeit
     * Präsentation / Software-Demo
 
