@@ -704,6 +704,445 @@ sichergestellt, dass die Anwendung jederzeit effizient und sicher auf die benöt
 
 * * *
 
+### Echtzeit Kommunikation mit SocketIO:
+
+### Daily Challenge
+
+#### 1. REQUEST_DAILY_CHALLENGE_QUESTION Event
+**Event:** `REQUEST_DAILY_CHALLENGE_QUESTION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt dann wird die Funktion 
+`getGapTextFromDB()` ausgeführt
+
+**Client-Event:** `REQUEST_DAILY_CHALLENGE_QUESTION`
+
+**Parameter:** -
+
+***
+
+#### 2. BUZZER_QUESTION_TYPE Event
+**Event:** `BUZZER_QUESTION_TYPE`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Der Server empfängt eine Anfrage zur Art der Frage und sendet die entsprechende Information an den Client zurück.
+
+**Client-Event:** `BUZZER_QUESTION_TYPE`
+
+**Parameter:** -
+
+***
+
+#### 3. RECEIVE_QUESTION_GAP_TEXT Event
+**Event:** `RECEIVE_QUESTION_GAP_TEXT`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Tabelle `gaptexquestion` ist, dann wird die Frage `question` an den Client zurückgesendet.
+
+**Client-Event:** `RECEIVE_QUESTION_GAP_TEXT`
+
+**Parameter:** `question`
+
+***
+
+#### 4. RECEIVE_QUESTION_MULTIPLE_CHOICE Event
+**Event:** `RECEIVE_QUESTION_MULTIPLE_CHOICE`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Tabelle nicht `gaptexquestion` ist, dann wird die Frage `question` an den Client zurückgesendet.
+
+**Client-Event:** `RECEIVE_QUESTION_MULTIPLE_CHOICE`
+
+**Parameter:** `question`
+
+***
+
+### Buzzer
+
+#### 1. BUZZER_QUEUE Event
+**Event:** `BUZZER_QUEUE`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird die Warteschlange gestarted und ein neuer Raum erzeugt.
+
+**Client-Event:** `BUZZER_QUEUE`
+
+**Parameter:** `playerName`
+
+***
+
+#### 2. Buzzer_GameFound Event
+**Event:** `Buzzer_GameFound`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn zwei Spieler in einem Raum sind dann sendet der Server die Anfrage mit `true`an den Client.
+
+**Client-Event:** `Buzzer_GameFound`
+
+**Parameter:** `true`
+
+***
+
+#### 3. Leave_Buzzer_Queue Event
+**Event:** `Leave_Buzzer_Queue`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der Socket aus dem Raum entfernt.
+
+**Client-Event:** `Leave_Buzzer_Queue`
+
+**Parameter:** -
+
+***
+
+
+#### 4. PLAYER_BUZZERED Event
+**Event:** `PLAYER_BUZZERED`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt wird der Timer für die Runde gestoppt und der Timer für den Spielzug wird gestartet.
+
+**Client-Event:** `PLAYER_BUZZERED`
+
+**Parameter:** - 
+
+***
+
+#### 5. DISABLE_BUZZER Event
+**Event:** `DISABLE_BUZZER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Buzzer gedrückt wurde wird die Anfrage and den Client gesendet.
+
+**Client-Event:** `DISABLE_BUZZER`
+
+**Parameter:** -
+
+***
+
+#### 6. OPPONENT_BUZZERED Event
+**Event:** `OPPONENT_BUZZERED`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Buzzer gedrückt wurde wird die Anfrage and den Client gesendet.
+
+**Client-Event:** `OPPONENT_BUZZERED`
+
+**Parameter:** -
+
+***
+
+#### 7. COMPARE_ANSWER Event
+**Event:** `COMPARE_ANSWER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, wird die Antwort `answer` mit der Lösung verglichen.
+
+**Client-Event:** `COMPARE_ANSWER`
+
+**Parameter:** `answer`
+
+***
+
+#### 8. CORRECT_ANSWER Event
+**Event:** `CORRECT_ANSWER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Antwort Richtig war wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `CORRECT_ANSWER`
+
+**Parameter:** -
+
+***
+
+#### 9. ENABLE_BUZZER Event
+**Event:** `ENABLE_BUZZER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Antwort Richtig oder Falsch war wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `ENABLE_BUZZER`
+
+**Parameter:** -
+
+***
+
+#### 10. END_ROUND Event
+**Event:** `END_ROUND`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Antwort Richtig oder Falsch war wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `END_ROUND`
+
+**Parameter:** 
+
+Bei einer richtigen Antwort: 
+`playerNames[socket.id], correctAnswer, playerPoints[room][socket.id], playerPoints[room][otherPlayer]`
+Bei einer falschen Antwort:
+`"unentschieden", correctAnswer, playerPoints[room][otherPlayer], playerPoints[room][socket.id]`
+
+***
+
+#### 11. WRONG_ANSWER Event
+**Event:** `WRONG_ANSWER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Antwort Falsch war wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `WRONG_ANSWER`
+
+**Parameter:** -
+
+***
+
+#### 12. OPONENT_WRONG_ANSWER Event
+**Event:** `OPONENT_WRONG_ANSWER`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Antwort Falsch war wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `OPONENT_WRONG_ANSWER`
+
+**Parameter:** -
+
+***
+
+### Lobby
+
+#### 1. CLOSE_LOBBY Event
+**Event:** `CLOSE_LOBBY`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der Raum geschlossen.
+**Client-Event:** `CLOSE_LOBBY`
+
+**Parameter:** -
+
+***
+
+#### 2. disconnect Event
+**Event:** `disconnect`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der andere Spieler über die Trennung informiert.
+
+**Client-Event:** `disconnect`
+
+**Parameter:** -
+
+***
+
+#### 3. OPPONEN_DISCONNECTED Event
+**Event:** `OPPONEN_DISCONNECTED`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der andere Spieler über die Trennung informiert.
+
+**Client-Event:** `OPPONEN_DISCONNECTED`
+
+**Parameter:** -
+
+***
+
+### Manipulation
+
+#### 1. Manipulation_Queue Event
+**Event:** `Manipulation_Queue`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird ein neuer Raum geöffnet.
+
+**Client-Event:** `Manipulation_Queue`
+
+**Parameter:** `playerName`
+
+***
+
+#### 2. Manipulation_GameFound Event
+**Event:** `Manipulation_GameFound`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn ein Raum 2 Spieler hat, dann wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `Manipulation_GameFound`
+
+**Parameter:** `true`
+
+***
+
+#### 3. Leave_Manipulation_Queue Event
+**Event:** `Leave_Manipulation_Queue`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der Socket aus dem Raum entfernt.
+
+**Client-Event:** `Leave_Manipulation_Queue`
+
+**Parameter:** -
+
+***
+
+#### 4. Leave_Manipulation_Queue Event
+**Event:** `Leave_Manipulation_Queue`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird der Socket aus dem Raum entfernt.
+
+**Client-Event:** `Leave_Manipulation_Queue`
+
+**Parameter:** -
+
+***
+
+#### 5. SUBMIT_CHANGES_MANIPULATION Event
+**Event:** `SUBMIT_CHANGES_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann werden die Änderungen in `data` gespeichert.
+
+**Client-Event:** `SUBMIT_CHANGES_MANIPULATION`
+
+**Parameter:** `data`
+
+***
+
+#### 6. SWITCH_PAGE_MANIPULATION Event
+**Event:** `SWITCH_PAGE_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der andere Spieler auch fertig ist, dann wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `SWITCH_PAGE_MANIPULATION`
+
+**Parameter:** -
+
+***
+
+#### 7. ENABLE_INPUT_MANIPULATION Event
+**Event:** `ENABLE_INPUT_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Nach einer Sekunde wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `ENABLE_INPUT_MANIPULATION`
+
+**Parameter:** `code: changedCode[room][otherPlayer].code,
+                            answer: changedCode[room][otherPlayer].expectedOutput,
+                            input: changedCode[room][otherPlayer].inputParameterQuestion`
+
+***
+
+#### 8. ADD_POINT_MANIPULATION Event
+**Event:** `ADD_POINT_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann werden die Punkte für den Spieler erhöht.
+
+**Client-Event:** `ADD_POINT_MANIPULATION`
+
+**Parameter:** -
+
+***
+
+#### 9. ROUND_END_MANIPULATION Event
+**Event:** `ROUND_END_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird die Runde beendet.
+
+**Client-Event:** `ROUND_END_MANIPULATION`
+
+**Parameter:** `bool`
+
+***
+
+#### 10. START_NEW_ROUND_MANIPULATION Event
+**Event:** `START_NEW_ROUND_MANIPULATION`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn beide Spieler die Runde beendet haben, dann wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `START_NEW_ROUND_MANIPULATION`
+
+**Parameter:** `playerNamesManipulation[room][otherPlayer], hasPlayerFixedCode[room][socket.id], hasPlayerFixedCode[room][otherPlayer], playerPointsManipulation[room][socket.id], playerPointsManipulation[room][otherPlayer]`
+
+***
+
+#### 11. END_MANIPULATION_GAME Event
+**Event:** `END_MANIPULATION_GAME`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn das Spiel zu ende ist, dann wird die Anfrage an den Server gesendet und die Lobby wird gelöscht.
+
+**Client-Event:** `END_MANIPULATION_GAME`
+
+**Parameter:** `playerPointsManipulation[room][socket.id], playerPointsManipulation[room][otherPlayer]`
+
+***
+
+### Testing
+
+#### 1. CONNECTION_TEST Event
+**Event:** `CONNECTION_TEST`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn der Server die Anfrage bekommt, dann wird eine neue Anfrage an den Client gesendet.
+
+**Client-Event:** `CONNECTION_TEST`
+
+**Parameter:** -
+
+***
+
+#### 2. CONNECTION_TEST_SUCCESSFULLY Event
+**Event:** `CONNECTION_TEST_SUCCESSFULLY`
+
+**Methode:** `socket.on und socket.emit`
+
+**Beschreibung:** Wenn die Anfrage `CONNECTION_TEST` erhalten wurde, wird die Anfrage an den Client gesendet.
+
+**Client-Event:** `CONNECTION_TEST_SUCCESSFULLY`
+
+**Parameter:** `true`
+
+
+
+
+
+
 
 ## 3.3 Datenmodell
 
