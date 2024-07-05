@@ -67,7 +67,7 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
 | Datenbank           | Leonie Terlutter | Hochschul-Email                         |                                                        |                                                                                           |
 | Webanwendung        | Oliver Mann      | Hochschul-Email                         |                                                        |                                                                                           |
 | Webanwendung        | Tobias Wegner    | Hochschul-Email                         | Grundlegende Kenntnisse GitHub verwaltung / JavaScript | Vertiefung Repository/Organisations verwaltung, Gute Planung zur Vorbeugung von Problemen |
-| Webanwendung        | Kevin Zuber      | Hochschul-Email                         |                                                        |                                                                                           |
+| Webanwendung        | Kevin Zuber      | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript / HTML / CSS                                                       | Webentwicklung / Angenehme User Experience / Ansprechendes Design                                                                                          |
 | User (extern)       | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
 | Tutor (extern)      | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
 
@@ -1369,10 +1369,10 @@ Die Softwarearchitektur wurde gemeinsam und in Einverständnis von allen Mitglie
 Die Aufgaben wurden immer anhand des Zuständigkeitsbereiches und der Rollen verteilt. Bei Bedarf wurde aber auch nach 
 Absprache Zuständigkeitsbereich-übergreifend gearbeitet.
 
-Das Kanban Board wurde von allen Gruppen Mitgliedern verwendet verwendet.
+Das Kanban Board wurde von allen Gruppen Mitgliedern verwendet.
 
 #### Lewin Wanzek:
-- leitung der Meetings
+- Leitung der Meetings
   - Ablauf
   - Aufgabenverteilung
 - Kommunikation Server-Datenbank
