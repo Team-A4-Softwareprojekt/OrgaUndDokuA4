@@ -1446,14 +1446,57 @@ Das Kanban Board wurde von allen Gruppen Mitgliedern verwendet.
 
 **weitere Meilensteine:** anwendungsspezifische Features
 
-# 5 Anhänge
+# 5 Quellen
 
-## 5.1 Glossar
+### Button auf der Startseite
 
-* Definitionen, Abkürzungen, Begriffe
+* Button74: https://getcssscan.com/css-buttons-examples
 
-## 5.2 Referenzen
+### Animationen aus dem Internet
 
-* Handbücher, Gesetze
+* LoserAnimation.json: https://lottiefiles.com/
+* TieAnimation.json: https://lottiefiles.com/
+* WinnerAnimation.json: https://lottiefiles.com/
 
-## 5.3 Index
+### Bilder aus dem Internet
+
+* accountIcon.png: https://www.flaticon.com/
+* brokenHeart.png: https://at.pinterest.com/pin/193936327698136678/
+* clouds.png: https://www.freepik.com/free-ai-image/beautiful-clouds-digital-art_144644709.htm#fromView=search&page=1&position=0&uuid=9ab4c379-a60d-4abe-ae62-2cacdb1e4c4f
+* goldenHeart.png: https://www.pinterest.de/pin/821484788294176074/
+* homeIcon.png: https://www.flaticon.com/
+* redHeart.png: https://www.pinterest.de/pin/710513278735270715/
+* passwordEyeClosed.png: https://www.flaticon.com/de/kostenloses-icon/unsichtbar_565655
+* passwordEyeOpen.png: https://www.flaticon.com/de/kostenloses-icon/auge_797403
+* sadFace.png: https://www.pinterest.de/
+
+### Bilder die mit Hilfe von DALL-E erzeugt wurden
+
+* buzzerGame.png
+* codeBattle.png
+* codeBattleIngame.png
+* codeChallenge.png
+* codeExercise.png
+* codeSenpai.png
+* gymSenpai.png
+* limitationGame.png
+* manipulationGame.png
+* mathSenpai.png
+* medSenpai.png
+* missingContent.png
+* senpaiLogo.png
+
+### Bilder die durch eigene Bearbeitungen entstanden sind
+
+* buzzerGameGray.png
+* cloudsBlurry.jpg
+* limitationGameGray.png
+* manipulationGameGray.png
+
+### Eigene Screenshots vom Softwareprodukt
+
+* buzzerSlide1.png
+* buzzerSlide2.png
+* buzzerSlide3.png
+* manipulationSlide1.png
+* manipulationSlide2.png
