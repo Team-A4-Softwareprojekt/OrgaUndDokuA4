@@ -2,12 +2,12 @@
 
 ![](../media/SenpaiLogo.png)
 
-* Autoren:
-    * Tobias Wegner
-    * Leonie Terlutter
-    * Oliver Mann
-    * Kevin Zuber
-    * Lewin Wanzek
+* Autoren / Github-Alias:
+    * Tobias Wegner / Tobi511
+    * Leonie Terlutter / Leonie115
+    * Oliver Mann / OliverIsBad
+    * Kevin Zuber / kzuber93
+    * Lewin Wanzek / LewAnWa
 * Link zum Source Code Repository
     * Organisation: https://github.com/Team-A4-Softwareprojekt/OrgaUndDokuA4
     * Backend: https://github.com/Team-A4-Softwareprojekt/Senpai-Backend
