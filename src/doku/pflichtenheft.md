@@ -1,7 +1,5 @@
 # Anforderungs- und Entwurfsspezifikation ("Pflichtenheft")
 
-# 0 Titelseite
-
 ![](../media/SenpaiLogo.png)
 
 * Autoren:
@@ -14,7 +12,60 @@
     * Organisation: https://github.com/Team-A4-Softwareprojekt/OrgaUndDokuA4
     * Backend: https://github.com/Team-A4-Softwareprojekt/Senpai-Backend
     * Frontend: https://github.com/Team-A4-Softwareprojekt/Senpai-Frontend
-* Inhaltsverzeichnis (KOMMT)
+
+## Inhaltsverzeichnis
+
+0 Inhaltsverzeichnis
+
+1 Einführung
+
+  * 1.1 Beschreibung
+
+2 Anforderungen
+
+  * 2.1 Stakeholder
+
+  * 2.2 Funktionale Anforderungen
+
+  * 2.3 Nicht-funktionale Anforderungen
+
+    * 2.3.1 Rahmenbedingungen
+
+    * 2.3.2 Betriebsbedingungen
+
+    * 2.3.3 Qualitätsmerkmale
+
+  * 2.4 Graphische Benutzerschnittstelle
+
+  * 2.5 Anforderungen im Detail
+
+  * 2.6 Design Richtlinien
+
+3 Technische Beschreibung
+
+  * 3.1 Systemübersicht
+
+  * 3.2 Softwarearchitektur
+
+    * 3.2.1 Technologieauswahl
+
+  * 3.3 Schnittstellen-Technologien
+
+  * 3.4 Ausformulierung der Schnittstellen
+
+  * 3.5 Fehlerbehandlung
+
+  * 3.6 Validierung
+
+4 Projektorganisation
+
+  * 4.1 Annahmen
+
+  * 4.2 Verantwortlichkeiten
+
+  * 4.3 Grober Projektplan
+
+5 Quellen
 
 # 1 Einführung
 
@@ -63,11 +114,11 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
 | Funktion / Relevanz | Name             | Kontakt / Verfügbarkeit                 | Wissen                                                 | Interessen / Ziele                                                                        |
 |---------------------|------------------|-----------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | Product-Owner       | Projektteam      | s. individuelle Mails der Product-Owner |                                                        |                                                                                           |
-| Serveradministrator | Lewin Wanzek     | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript                     | Webentwicklung / stabile Serverumgebung                                                   |
-| Datenbank           | Leonie Terlutter | Hochschul-Email                         |                                                        |                                                                                           |
-| Webanwendung        | Oliver Mann      | Hochschul-Email                         |                                                        |                                                                                           |
+| Serveradministrator | Lewin Wanzek     | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript / Socket.io         | Webentwicklung / stabile Serverumgebung                                                   |
+| Datenbank           | Leonie Terlutter | Hochschul-Email                         | Grundlegende Kenntnisse PostgreSQL                     | Datenbankstrukturierung / Einhaltung der Standards                                        |
+| Webanwendung        | Oliver Mann      | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript                     | Webentwicklung / Logik und Design im Frontend                                             |
 | Webanwendung        | Tobias Wegner    | Hochschul-Email                         | Grundlegende Kenntnisse GitHub verwaltung / JavaScript | Vertiefung Repository/Organisations verwaltung, Gute Planung zur Vorbeugung von Problemen |
-| Webanwendung        | Kevin Zuber      | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript / HTML / CSS                                                       | Webentwicklung / Angenehme User Experience / Ansprechendes Design                                                                                          |
+| Webanwendung        | Kevin Zuber      | Hochschul-Email                         | Grundlegende Kenntnisse JavaScript / HTML / CSS        | Webentwicklung / Angenehme User Experience / Ansprechendes Design                         |
 | User (extern)       | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
 | Tutor (extern)      | /                | erreichbar über angelegte Accounts      |                                                        |                                                                                           |
 
@@ -85,7 +136,7 @@ bereits Erfahrung hast, Senpai begleitet dich auf deiner Reise zum Programmierex
 
 ![](../Artefacts/UCD/Payment.png)
 
-### Definition der Akteure
+#### Definition der Akteure
 
 **User (Lernender oder Tutor)**
 
@@ -1143,7 +1194,7 @@ Bei einer falschen Antwort:
 **Parameter:** `true`
 
 
-## 3.3 Datenmodell
+## 3.5 Datenmodell
 
 **Vorläufiges ER-Diagramm (V1)**
 ![](../Artefacts/ERD/ER-Diagramm_v3.png)
@@ -1152,7 +1203,7 @@ Bei einer falschen Antwort:
 * Modellierung des physikalischen Datenmodells
 * RDBMS: ER-Diagramm bzw. Dokumentenorientiert: JSON-Schema
 
-## 3.4 Abläufe und Entwürfe
+## 3.6 Abläufe und Entwürfe
 
 #### Login
 
@@ -1193,7 +1244,7 @@ Bei einer falschen Antwort:
 ![](../Artefacts/Aktivitätsdiagramme_V1/Limitation.png)
 
 
-## 3.5 Fehlerbehandlung
+## 3.7 Fehlerbehandlung
 
 Auflistung möglicher Fehler / Exceptions
 
@@ -1225,7 +1276,7 @@ Auflistung möglicher Fehler / Exceptions
 - `500 Internal Server Error` z.B. Datenbankfehler oder Passwort hashing fehler
 
 
-## 3.6 Validierung
+## 3.8 Validierung
 
 ### Einloggen:
 
